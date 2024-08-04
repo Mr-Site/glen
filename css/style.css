@@ -1,0 +1,144 @@
+@font-face {
+  font-family: iransans;
+  src: url(../font/IRANSansWeb.ttf);
+}
+
+* {
+  transition: 0.1s;
+}
+
+*::selection {
+  background-color: #706060;
+  color: #fff;
+}
+
+body {
+  font-family: iransans;
+  direction: rtl;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #9c8686;
+}
+
+.container {
+  width: 90%;
+  max-width: 2000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.fa {
+  font-size: 18px;
+}
+/* بنر */
+
+.topHeader {
+  background-color: #eed8aa;
+}
+
+.topHeader .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.topHeader .socialIcons {
+  font-size: 30px;
+}
+
+.topHeader .socialIcons a {
+  margin-right: 10px;
+}
+
+/* هدر */
+
+.header {
+  position: sticky;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header .glenLogo img {
+  width: 193px;
+  margin-right: -20px;
+}
+
+/* ناوبری */
+
+.header nav {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #9c8686;
+}
+
+.header nav a {
+  padding: 0 20px;
+  border-left: 1px solid #eed8aa;
+}
+
+.header nav a:last-child {
+  border: none;
+}
+
+.header .login {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #feebdd;
+  background-color: #403b3b;
+}
+
+/* منو اعلانات */
+
+.notifMenu {
+  background-color: #f4f1ef;
+}
+
+.notifMenu .container {
+  font-size: 15px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #9c8686;
+}
+
+/* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
+/* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
+/* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
+
+.socialIcons a:hover {
+  color: #403b3b;
+}
+
+nav a:hover {
+  color: #706060;
+}
+
+.btnContainer a:hover:first-child {
+  color: #403b3b;
+  background-color: #eed8aa;
+}
+
+.btnContainer a:hover:last-child {
+  color: #706060;
+}
