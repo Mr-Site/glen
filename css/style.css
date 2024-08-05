@@ -63,6 +63,7 @@ a {
   position: sticky;
   right: 0;
   left: 0;
+  top: 0;
   z-index: 999;
   background-color: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -343,6 +344,86 @@ a {
   color: #9c8686;
 }
 
+/* s2 */
+
+#s2 .menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#s2 .titre {
+  color: #403b3b;
+}
+
+#s2 .swiper {
+  text-align: center;
+}
+
+#s2 swiper-container {
+  width: 100%;
+}
+
+#s2 swiper-slide {
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#s2 swiper-slide .image {
+  height: 200px;
+  overflow: hidden;
+}
+
+#s2 swiper-slide img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#s2 swiper-slide .pName {
+  font-size: 25px;
+  color: #9c8686;
+}
+
+#s2 swiper-slide .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+#s2 swiper-slide .info .weight {
+  color: #ba9664;
+  padding: 0 20px;
+}
+
+#s2 swiper-slide .info .price {
+  color: #ba9664;
+  padding: 0 20px;
+}
+#s2 swiper-slide .info .price span {
+  color: #9c8686;
+}
+
+/* s3 */
+
+#s3 a {
+  width: 100%;
+  overflow: hidden;
+}
+
+#s3 a img {
+  width: 100%;
+}
+
+/* s4 */
+
 /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
 /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
 /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
@@ -365,5 +446,10 @@ nav a:hover {
 }
 
 #s1 swiper-slide .pName:hover {
+  color: #706060;
+}
+
+#s2 swiper-slide .pName:hover,
+#s2 .more:hover {
   color: #706060;
 }
