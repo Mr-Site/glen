@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>glen</title>
 
+    <!-- swiper link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,7 +32,7 @@
 
     <!-- هدر -->
 
-    <div class="header">
+    <header class="header">
       <div class="container">
         <!-- logo -->
         <a href="#" class="glenLogo"
@@ -51,7 +58,7 @@
           ></a>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- منو اعلانات -->
 
@@ -69,11 +76,217 @@
       </div>
     </div>
 
+    <!-- main -->
+
+    <main>
+      <!-- s1 -->
+
+      <div id="s1">
+        <div class="container">
+          <!-- s1 right -->
+          <div class="right">
+            <a href="#" class="topImage"></a>
+
+            <!-- swiper -->
+            <div class="swiper">
+              <h2 class="titre">پرطرفدارترین های گلن</h2>
+
+              <swiper-container
+                class="mySwiper"
+                pagination="true"
+                effect="cube"
+                grab-cursor="true"
+                cube-effect-shadow="true"
+                cube-effect-slide-shadows="true"
+                cube-effect-shadow-offset="20"
+                cube-effect-shadow-scale="0.94"
+                pagination="true"
+                pagination-clickable="true"
+                centered-slides="true"
+                autoplay-delay="5000"
+                autoplay-disable-on-interaction="false"
+              >
+                <swiper-slide>
+                  <div class="image">
+                    <img
+                      src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                      alt=""
+                    />
+                  </div>
+
+                  <a href="#"><h3 class="pName">دستبند طلا</h3></a>
+
+                  <div class="info">
+                    <span class="weight">۲/۵ گرم</span>
+                    <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+                  </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <div class="image">
+                    <img
+                      src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                      alt=""
+                    />
+                  </div>
+
+                  <a href="#"><h3 class="pName">سرویس طلا</h3></a>
+
+                  <div class="info">
+                    <span class="weight">۲/۵ گرم</span>
+                    <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+                  </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <div class="image">
+                    <img
+                      src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                      alt=""
+                    />
+                  </div>
+
+                  <a href="#"><h3 class="pName">النگو طلا</h3></a>
+
+                  <div class="info">
+                    <span class="weight">۲/۵ گرم</span>
+                    <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+                  </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <div class="image">
+                    <img
+                      src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                      alt=""
+                    />
+                  </div>
+
+                  <a href="#"><h3 class="pName">گوشواره طلا</h3></a>
+
+                  <div class="info">
+                    <span class="weight">۲/۵ گرم</span>
+                    <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+                  </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <div class="image">
+                    <img
+                      src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                      alt=""
+                    />
+                  </div>
+
+                  <a href="#"><h3 class="pName">انگشتر طلا</h3></a>
+
+                  <div class="info">
+                    <span class="weight">۲/۵ گرم</span>
+                    <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+          </div>
+
+          <!-- s1 left -->
+          <div class="left">
+            <!-- اسلایدر -->
+
+            <div class="slider">
+              <div
+                class="slideshow-container"
+                onmouseover="stopSlide()"
+                onmouseleave="resumeSlide()"
+              >
+                <div class="mySlides fade">
+                  <a href="#">
+                    <img
+                      src="media/images/13tmag-raymond-slide-K086-superJumbo.jpg"
+                      style="width: 100%"
+                  /></a>
+                </div>
+
+                <div class="mySlides fade">
+                  <a href="#">
+                    <img
+                      src="media/images/skin-studio-lifestyle-cnnu.jpg"
+                      style="width: 100%"
+                  /></a>
+                </div>
+
+                <div class="mySlides fade">
+                  <a href="#">
+                    <img
+                      src="media/images/13tmag-raymond-slide-K086-superJumbo.jpg"
+                      style="width: 100%"
+                  /></a>
+                </div>
+
+                <div class="mySlides fade">
+                  <a href="#">
+                    <img
+                      src="media/images/649568a7a8a62d807124e772_Jewelry as an Investment.webp"
+                      style="width: 100%"
+                  /></a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"
+                  ><i class="fa-solid fa-chevron-left fa"></i
+                ></a>
+                <a class="next" onclick="plusSlides(1)"
+                  ><i class="fa-solid fa-chevron-right fa"></i
+                ></a>
+              </div>
+              <br />
+
+              <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+            </div>
+            <div class="specialIcons">
+              <div class="item">
+                <i class="fa-regular fa-clipboard"></i>
+                <div>ارائه فاکتور معتبر</div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-repeat"></i>
+                <div>امکان تعویض و عودت</div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-medal"></i>
+                <div>ضمانت اصالت کالا</div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-shield"></i>
+                <div>امنیت بالای خرید طلا</div>
+              </div>
+
+              <div class="item">
+                <i class="fa-solid fa-truck"></i>
+                <div>ارسال به سراسر کشور</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- fontawesome link -->
     <script
       src="https://kit.fontawesome.com/51e7612045.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- s1 swiper link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <!--  js link  -->
     <script src="js/main.js"></script>
