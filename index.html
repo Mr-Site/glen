@@ -15,7 +15,7 @@
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body onload="startTime()">
     <!-- بنر -->
 
     <div class="topHeader">
@@ -71,7 +71,9 @@
 
         <div class="date">
           <span>امروز : </span>
-          <span>پنجشنبه ۰۴ مرداد ۱۴۰۳ - ۱۳:۴۰:۲۵</span>
+          <span id="clock"> </span>
+          -
+          <span id="Result"></span>
         </div>
       </div>
     </div>
@@ -89,7 +91,7 @@
 
             <!-- swiper -->
             <div class="swiper">
-              <h2 class="titre">پرطرفدارترین های گلن</h2>
+              <h2 class="titre">پرطرفدارترین محصولات</h2>
 
               <swiper-container
                 class="mySwiper"
@@ -280,7 +282,7 @@
       <div id="s2">
         <div class="container">
           <div class="menuHeader">
-            <h3 class="titre">پر فروش ترین محصولات</h3>
+            <h2 class="titre">پر فروش ترین محصولات</h2>
             <a href="#" class="more">مشاهده همه</a>
           </div>
 
@@ -451,6 +453,58 @@
       </div>
 
       <!-- s4 -->
+
+      <div id="s4">
+        <div class="container">
+          <a href="#" class="item">
+            <div class="imgBorder">
+              <img src="media/images/s4-1.png" alt="" />
+            </div>
+
+            <h3>تاج طلا</h3>
+          </a>
+
+          <a href="#" class="item">
+            <div class="imgBorder">
+              <img src="media/images/s4-2.png" alt="" />
+            </div>
+
+            <h3>گوشواره طلا</h3>
+          </a>
+
+          <a href="#" class="item">
+            <div class="imgBorder">
+              <img src="media/images/s4-3.png" alt="" />
+            </div>
+
+            <h3>گردنبند سبک</h3>
+          </a>
+
+          <a href="#" class="item">
+            <div class="imgBorder">
+              <img src="media/images/s4-4.png" alt="" />
+            </div>
+
+            <h3>سرویس ظریف</h3>
+          </a>
+
+          <a href="#" class="item">
+            <div class="imgBorder">
+              <img src="media/images/s4-5.png" alt="" />
+            </div>
+
+            <h3>حلقه ازدواج</h3>
+          </a>
+
+          <a href="#" class="item">
+            <div class="imgBorder">
+              <img src="media/images/s4-6.png" alt="" />
+            </div>
+
+            <h3>کارتیر</h3>
+          </a>
+        </div>
+      </div>
     </main>
 
     <!-- fontawesome link -->
