@@ -28,7 +28,8 @@ body {
   font-family: iransans;
   direction: rtl;
   width: 100%;
-  margin: 0;
+  max-width: 2000px;
+  margin: auto;
   overflow-x: hidden;
 }
 a {
@@ -39,13 +40,17 @@ a {
 
 .container {
   width: 90%;
-  max-width: 2000px;
+
   margin: auto;
   overflow: hidden;
 }
 
 .fa {
   font-size: 18px;
+}
+
+swiper-slide a:active {
+  cursor: grabbing !important;
 }
 /* بنر */
 
