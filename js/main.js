@@ -142,3 +142,36 @@ Object.assign(swiperEl, {
   },
 });
 swiperEl.initialize();
+
+// s5 swiper
+
+const swiperEl2 = document.querySelector(".s5Swiper");
+Object.assign(swiperEl2, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+    },
+
+    1400: {
+      slidesPerView: 2.5,
+      spaceBetween: 25,
+    },
+
+    1800: {
+      slidesPerView: 3.5,
+      spaceBetween: 35,
+    },
+  },
+});
+swiperEl2.initialize();
