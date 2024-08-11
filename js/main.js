@@ -175,3 +175,43 @@ Object.assign(swiperEl2, {
   },
 });
 swiperEl2.initialize();
+
+// s7 swiper
+
+const swiperEl3 = document.querySelector(".s7Swiper");
+Object.assign(swiperEl3, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 35,
+    },
+
+    1400: {
+      slidesPerView: 4.5,
+      spaceBetween: 45,
+    },
+
+    100: {
+      slidesPerView: 5.5,
+      spaceBetween: 55,
+    },
+  },
+});
+swiperEl3.initialize();
