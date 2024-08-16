@@ -28,7 +28,7 @@ body {
   font-family: iransans;
   direction: rtl;
   width: 100%;
-  max-width: 2000px;
+  max-width: 2500px;
   margin: auto;
   overflow-x: hidden;
 }
@@ -550,6 +550,8 @@ swiper-slide a:active {
 
 #s5 .right swiper-slide del {
   display: block;
+  font-size: 12px;
+  margin-left: 13%;
 }
 #s5 .right swiper-slide .info .price span {
   color: #9c8686;
