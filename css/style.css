@@ -1,5 +1,5 @@
 @font-face {
-  font-family: iransans;
+  font-family: iransans-web;
   src: url(../font/IRANSansWeb.ttf);
 }
 
@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: iransans;
+  font-family: iransans-web;
   direction: rtl;
   width: 100%;
   max-width: 2500px;
@@ -234,18 +234,18 @@ swiper-slide a:active {
 
 /* اسلایدر */
 
-#s1 .slideshow-container {
-  filter: grayscale(100%);
-  transition: 0.3s;
+#s1 .slider {
+  position: relative;
+  height: 500px;
 }
 
-#s1 .slideshow-container:hover {
-  filter: grayscale(0);
+#s1 .slideshow-container {
+  transition: 0.3s;
 }
 
 .mySlides {
   display: none;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -302,6 +302,14 @@ swiper-slide a:active {
 }
 
 /* The dots/bullets/indicators */
+.dotContainer {
+  position: absolute;
+  top: 95%;
+  right: 40%;
+  left: 40%;
+  margin: auto;
+}
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -342,21 +350,22 @@ swiper-slide a:active {
   }
 }
 
+/* special icons */
+
 #s1 .specialIcons {
-  margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 #s1 .specialIcons .item {
   text-align: center;
   color: #403b3b;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 #s1 .specialIcons .item i {
-  font-size: 50px;
+  font-size: 35px;
   margin-bottom: 10px;
   color: #9c8686;
 }
@@ -679,6 +688,122 @@ swiper-slide a:active {
   background-color: #feebdd;
 }
 
+/* فوتر */
+
+footer {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 5px solid #9c8686;
+  background-color: #f4f1ef;
+}
+
+/* footer logo  */
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.footerLogo img {
+  width: 150px;
+  padding-left: 15px;
+  border-left: 1px solid #eed8aa;
+}
+
+.footerLogo h3 {
+  padding-right: 15px;
+  color: #9c8686;
+  font-weight: bold;
+}
+
+/* footer top */
+
+.footerTop {
+  padding-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* footer top right */
+
+.footerTop .right {
+  width: 30%;
+  color: #ba9664;
+  font-size: 15px;
+}
+
+.footerTop .right h3 {
+  margin: 10px 0;
+}
+
+.footerTop .right .address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerTop .right .address .fa {
+  color: #9c8686;
+  padding-right: 10px;
+}
+
+/* footer top center */
+
+.footerTop .center {
+  display: flex;
+}
+
+.footerTop .center .menu:first-child {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.footerTop .center .menu:last-child {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.footerTop .center .menu h3 {
+  color: #403b3b;
+  font-size: 15px;
+}
+
+.footerTop .center .menu .item {
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+/* footer top left */
+
+.footerTop .left {
+  align-self: flex-start;
+}
+
+.footerTop .left h3 {
+  font-size: 15px;
+  color: #9c8686;
+}
+
+.footerTop .left .footerIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer bottom */
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid #b5b4b1;
+  color: #9c8686;
+}
+
 /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
 /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
 /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */ /* هاور */
@@ -720,5 +845,9 @@ nav a:hover {
 
 #s7 swiper-slide .pName:hover,
 #s7 .more:hover {
+  color: #706060;
+}
+
+.footerTop .center .menu .item:hover {
   color: #706060;
 }

@@ -1,3 +1,22 @@
+// فارسی کننده اعداد
+
+const persianNumbers = {
+  0: "۰",
+  1: "۱",
+  2: "۲",
+  3: "۳",
+  4: "۴",
+  5: "۵",
+  6: "۶",
+  7: "۷",
+  8: "۸",
+  9: "۹",
+};
+
+function convertToPersian(text) {
+  return text.replace(/[0-9]/g, (match) => persianNumbers[match]);
+}
+
 // تاریخ
 
 function gregorian_to_jalali(gy, gm, gd) {
@@ -38,8 +57,13 @@ Day = MyDate.getDate();
 var Result = document.getElementById("Result");
 
 Tarikh_Shamci = gregorian_to_jalali(Year, Month, Day);
-Result.innerHTML =
-  Tarikh_Shamci[0] + "/" + Tarikh_Shamci[1] + "/" + Tarikh_Shamci[2];
+Result.innerHTML = convertToPersian(
+  String(Tarikh_Shamci[0]) +
+    "/" +
+    String(Tarikh_Shamci[1]) +
+    "/" +
+    String(Tarikh_Shamci[2])
+);
 
 // ساعت
 function startTime() {
@@ -49,7 +73,9 @@ function startTime() {
   let s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
+  document.getElementById("clock").innerHTML = convertToPersian(
+    h + ":" + m + ":" + s
+  );
   setTimeout(startTime, 1000);
 }
 
@@ -131,13 +157,8 @@ Object.assign(swiperEl, {
     },
 
     1400: {
-      slidesPerView: 4.5,
-      spaceBetween: 45,
-    },
-
-    100: {
-      slidesPerView: 5.5,
-      spaceBetween: 55,
+      slidesPerView: 3.5,
+      spaceBetween: 35,
     },
   },
 });
@@ -204,13 +225,8 @@ Object.assign(swiperEl3, {
     },
 
     1400: {
-      slidesPerView: 4.5,
-      spaceBetween: 45,
-    },
-
-    100: {
-      slidesPerView: 5.5,
-      spaceBetween: 55,
+      slidesPerView: 3.5,
+      spaceBetween: 35,
     },
   },
 });
