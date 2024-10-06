@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>glen</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- contactUs css link -->
+    <link rel="stylesheet" href="css/contactUs-style.css" />
+  </head>
+  <body onload="startTime()">
+    <!-- بنر -->
+
+    <div class="topHeader">
+      <div class="container">
+        <div>۰۵۱-۳۲۲۸۵۸۵۴</div>
+        <div>امکان ثبت سفارش به صورت ۲۴ ساعته حتی در روز های تعطیل</div>
+        <div class="socialIcons">
+          <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-telegram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- هدر -->
+
+    <header class="header">
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="glenLogo"
+          ><img src="media/Logo/glen logo.png" alt="glen logo"
+        /></a>
+
+        <!-- nav -->
+
+        <nav>
+          <a href="index.html">خانه</a>
+          <a href="gallery.html">گالری</a>
+          <a href="aboutUs.html">معرفی</a>
+          <a href="contactUs.html">تماس با ما</a>
+          <a href="#">اخبار</a>
+          <a href="faq.html">سوالات متداول</a>
+        </nav>
+        <div class="btnContainer">
+          <a href="#" class="login">
+            <i class="fa-solid fa-user fa"></i>
+            ورود / ثبت نام
+          </a>
+          <a href="#" class="shopping"
+            ><i class="fa-solid fa-cart-shopping fa"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- منو اعلانات -->
+
+    <div class="notifMenu">
+      <div class="container">
+        <div class="price">
+          <span>قیمت طلای ۱۸ عیار :</span>
+          <span>۳,۶۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="date">
+          <span>امروز : </span>
+          <span id="clock"> </span>
+          -
+          <span id="Result"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageMap">
+      <div class="container">
+        <h2>تماس با گلن</h2>
+
+        <!-- مپ -->
+
+        <nav class="breadcrumb">
+          <a href="\">
+            <span>خانه</span>
+          </a>
+
+          <span>/</span>
+
+          <a href="contactUs.html">
+            <h1>تماس با ما</h1>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <p style="color: #9c8686">
+        شما می‌توانید از طریق راه‌های زیر، با کارشناسان گلن در ارتباط باشید.
+      </p>
+    </div>
+
+    <!-- main -->
+
+    <main>
+      <div id="kadrErtebat">
+        <div class="container">
+          <div
+            style="display: flex; justify-content: space-between; width: 50%"
+          >
+            <!-- آدرس فروشگاه -->
+            <div id="kadrAddressStore">
+              <h4>
+                <i
+                  class="fa-solid fa-location-dot fa"
+                  style="color: #9c8686"
+                ></i>
+                آدرس
+              </h4>
+
+              <h5>مشهد ، چهار طبقه ، پاساژ لیدوما</h5>
+              <h5>
+                <span style="color: #9c8686">گالری :</span>طبقه منفی ۲ واحد ۴۸
+              </h5>
+
+              <h5>
+                <span style="color: #9c8686">جلسات :</span> طبقه مثبت ۱ واحد ۱۶
+              </h5>
+
+              <h5>
+                <span style="color: #9c8686">کارگاه :</span> طبقه منفی ۲ واحد ۴۷
+              </h5>
+            </div>
+
+            <!-- شماره تماس فروشگاه -->
+            <div id="kadrShomareStore">
+              <h4>
+                <i
+                  class="fa-solid fa-phone"
+                  style="color: #9c8686; transform: rotate(-90deg)"
+                ></i>
+                تلفن
+              </h4>
+
+              <h5>۰۵۱-۳۲۲۸۵۸۵۴</h5>
+              <h5>۰۵۱-۳۲۲۸۵۸۵۴</h5>
+              <h5>۰۵۱-۳۲۲۸۵۸۵۴</h5>
+              <h5>۰۵۱-۳۲۲۸۵۸۵۴</h5>
+            </div>
+
+            <!-- تایم کاری فروشگاه -->
+            <div id="kadrTimeKari">
+              <h4>
+                <i class="fa-solid fa-bell" style="color: #9c8686"></i>
+                ساعات پاسخگویی وبسایت
+              </h4>
+              <h5>شنبه تا پنج شنبه: ۱۰:۰۰ الی ۲۰:۰۰</h5>
+
+              <h4>
+                <i class="fa-solid fa-bell" style="color: #9c8686"></i>
+                ساعت کاری فروشگاه
+              </h4>
+              <h5>شنبه تا پنج شنبه: ۰۹:۰۰ الی ۱۴:۰۰</h5>
+            </div>
+          </div>
+
+          <!-- لوکیشن فروشگاه -->
+          <div id="locationStore">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347.93059490037575!2d59.60319976561059!3d36.29144269127454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6c912212ee2b67%3A0xfe751fa92ffc905e!2sGold%20and%20Jewelry%20Lidoma!5e0!3m2!1sen!2sus!4v1727511750143!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- فرم ارسال سوالات -->
+      <!-- <form action="#">
+        <div class="container">
+          <input type="text" name="fNamUser" id="fNameUser" placeholder="نام" />
+
+          <input
+            type="text"
+            name="lNameUser"
+            id="lNameUser"
+            placeholder="نام خانوادگی"
+          />
+
+          <input
+            type="number"
+            name="phoneNumberUser"
+            id="phoneNumberUser"
+            placeholder="شماره همراه"
+          />
+
+          <textarea
+            name="matnSoalUser"
+            id="matnSoalUser"
+            placeholder="متن پیام"
+          ></textarea>
+
+          <input type="submit" id="ersalSoal" value="ارسال" />
+        </div>
+      </form> -->
+    </main>
+
+    <!-- فوتر -->
+
+    <footer>
+      <div class="container">
+        <div class="footerLogo">
+          <img src="media/logo/GLEN LOGO FINAL ۲.png" alt="" />
+          <h3>متنوع ، به صرفه و با كيفيت</h3>
+        </div>
+        <div class="footerTop">
+          <div class="right">
+            <h3 class="address">آدرس : مشهد ، چهار طبقه ، پاساژ لیدوما</h3>
+
+            <div class="address">
+              <h3>گالری : طبقه منفي ۲ واحد ۴۸</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>جلسات : طبقه مثبت ۱ واحد ۱۶</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>کارگاه : طبقه منفي ۲ واحد ۴۷</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+          </div>
+
+          <div class="center">
+            <div class="menu">
+              <h3>دسترسی سریع</h3>
+
+              <a href="#" class="item">گوشواره طلا زنانه</a>
+              <a href="#" class="item">حلقه طلا</a>
+              <a href="#" class="item">کالا های تخفیف دار</a>
+              <a href="#" class="item">سرویس و نیم ست طلا</a>
+            </div>
+
+            <div class="menu">
+              <h3>خدمات</h3>
+
+              <a href="#" class="item">راهنمای خرید</a>
+              <a href="faq.html" class="item">سوالات متداول</a>
+              <a href="#" class="item">شرایط و قوانین</a>
+              <a href="contactUs.html" class="item">تماس با ما</a>
+            </div>
+          </div>
+
+          <div class="left">
+            <h3>ارتباط از طریق شبکه های اجتماعی</h3>
+
+            <div class="footerIcons">
+              <a href="#"><img src="media/icons/telegram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/instagram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/whats app.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>
+            تمام حقوق برای گلن محفوظ بوده و استفاده از محتوای گلن تنها با ذکر
+            نام و درج لینک مستقیم مجاز است.
+          </p>
+
+          <a href="#">
+            <img src="media/icons/eNamad.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/51e7612045.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  js link  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+#kadrErtebat {
+  margin-top: 50px;
+}
+
+#kadrErtebat .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#locationStore iframe {
+  border-radius: 5px;
+}
+
+#kadrErtebat h4 {
+  color: #9c8686;
+  font-size: 20px;
+}
+
+#kadrErtebat h5 {
+  color: #ba9664;
+  font-size: 15px;
+}
+
+/* فرم ارسال سوالات*/
+form {
+  width: 30%;
+}
+
+form .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form #fNameUser,
+form #lNameUser {
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+form #phoneNumberUser,
+form #matnSoalUser {
+  width: 100%;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+form #fNameUser,
+form #lNameUser,
+form #phoneNumberUser,
+form #matnSoalUser {
+  border-radius: 5px;
+  background-color: #feebdd;
+  color: #9c8686;
+  border: none;
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form #fNameUser:focus,
+form #lNameUser:focus,
+form #phoneNumberUser:focus,
+form #matnSoalUser:focus {
+  outline: none;
+  background-color: #ffdfc8;
+  color: #000;
+}
+
+#ersalSoal {
+  padding: 8px 20px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border: none;
+  border-radius: 5px;
+}

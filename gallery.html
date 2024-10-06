@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>glen</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- gallery css link -->
+    <link rel="stylesheet" href="css/gallery-style.css" />
+  </head>
+  <body onload="startTime()">
+    <!-- بنر -->
+
+    <div class="topHeader">
+      <div class="container">
+        <div>۰۵۱-۳۲۲۸۵۸۵۴</div>
+        <div>امکان ثبت سفارش به صورت ۲۴ ساعته حتی در روز های تعطیل</div>
+        <div class="socialIcons">
+          <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-telegram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- هدر -->
+
+    <header class="header">
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="glenLogo"
+          ><img src="media/Logo/glen logo.png" alt="glen logo"
+        /></a>
+
+        <!-- nav -->
+
+        <nav>
+          <a href="index.html">خانه</a>
+          <a href="gallery.html">گالری</a>
+          <a href="aboutUs.html">معرفی</a>
+          <a href="contactUs.html">تماس با ما</a>
+          <a href="#">اخبار</a>
+          <a href="faq.html">سوالات متداول</a>
+        </nav>
+        <div class="btnContainer">
+          <a href="#" class="login">
+            <i class="fa-solid fa-user fa"></i>
+            ورود / ثبت نام
+          </a>
+          <a href="#" class="shopping"
+            ><i class="fa-solid fa-cart-shopping fa"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- منو اعلانات -->
+
+    <div class="notifMenu">
+      <div class="container">
+        <div class="price">
+          <span>قیمت طلای ۱۸ عیار :</span>
+          <span>۳,۶۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="date">
+          <span>امروز : </span>
+          <span id="clock"> </span>
+          -
+          <span id="Result"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageMap">
+      <div class="container">
+        <h2>گالری گلن</h2>
+
+        <!-- مپ -->
+
+        <nav class="breadcrumb">
+          <a href="\">
+            <span>خانه</span>
+          </a>
+
+          <span>/</span>
+
+          <a href="gallery.html">
+            <h1>گالری</h1>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <main>
+      <!-- گزینه های مرتب سازی -->
+
+      <div class="moratabSazi">
+        <div class="container">
+          <h4>
+            <i
+              class="fa-solid fa-arrow-down-wide-short"
+              style="color: #403b3b"
+            ></i>
+            <span>مرتب سازی :</span>
+          </h4>
+
+          <div class="itemsMoratabSazi">
+            <a href="#" class="jadidTarin">جدیدترین</a>
+            <a href="#" class="geranTarin">گران ترین</a>
+            <a href="#" class="arzanTarin">ارزان ترین</a>
+            <a href="#" class="porForoshTarin">پرفروش ترین</a>
+          </div>
+
+          <!-- کالا های موجود -->
+
+          <div class="kalayeMojood">
+            <h4>فقط کالا های موجود</h4>
+
+            <label class="switch">
+              <input class="btnKalayeMojood" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- نمایش محصولات -->
+
+      <div class="container namayeshMahsool">
+        <!-- فیلتر محصولات -->
+        <div class="filterMahsool stickyBox">
+          <!-- فیلتر قیمت -->
+
+          <div class="filterGheimat">
+            <h4>محدوده قیمت :</h4>
+
+            <div class="custom-wrapper">
+              <div class="price-input-container">
+                <div class="price-input">
+                  <div class="price-field">
+                    <span>تومان</span>
+                    <input type="number" id="min-input" value="0" />
+                    <span>از</span>
+                  </div>
+                  <div class="price-field">
+                    <span>تومان</span>
+                    <input type="number" class="max-input" value="200000000" />
+                    <span>تا</span>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <div class="price-slider"></div>
+                </div>
+              </div>
+
+              <!-- Slider -->
+              <div class="range-input">
+                <input
+                  type="range"
+                  class="min-range"
+                  min="0"
+                  max="195000000"
+                  value="0"
+                  step="1"
+                />
+
+                <input
+                  type="range"
+                  class="max-range"
+                  min="2500000"
+                  max="200000000"
+                  value="200000000"
+                  step="1"
+                />
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 10px;
+                "
+              >
+                <span>ارزانترین</span>
+                <span>گرانترین</span>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- فیلتر وزن -->
+          <h4>وزن طلا :</h4>
+          <div class="filterVazn">
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>۳ گرم — ۷ گرم</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>۷ گرم — ۱۵ گرم</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>۱۵ گرم — ۳۰ گرم</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>۳۰ گرم — ۱۰۰ گرم</span>
+            </label>
+          </div>
+          <hr />
+          <!-- فیلتر برند -->
+          <h4>برند طلا :</h4>
+          <div class="filterBrand">
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>ون کلیف</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+
+            <label class="container">
+              <input type="checkbox" name="" id="vazn0ta3" value="0_3" />
+              <span class="checkmark"></span>
+              <span>لویی ویتون</span>
+            </label>
+          </div>
+          <hr />
+          <!-- کالا های تخفیف دار -->
+
+          <div class="kalayeOffer">
+            <h4>فقط کالا های تخفیف دار</h4>
+
+            <label class="switch">
+              <input class="btnKalayeMojood" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- لیست محصولات -->
+
+        <div class="listMahsool">
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="دستبندطلامدلn.html">
+              <div class="image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                  alt=""
+                />
+              </div>
+
+              <h3 class="pName">سرویس طلا</h3>
+              <div class="info">
+                <span class="weight">۲/۵ گرم</span>
+                <span class="price"><span>۹۹۹,۹۹۹,۹۹۹</span> تومان</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- فوتر -->
+
+    <footer>
+      <div class="container">
+        <div class="footerLogo">
+          <img src="media/logo/GLEN LOGO FINAL ۲.png" alt="" />
+          <h3>متنوع ، به صرفه و با كيفيت</h3>
+        </div>
+        <div class="footerTop">
+          <div class="right">
+            <h3 class="address">آدرس : مشهد ، چهار طبقه ، پاساژ لیدوما</h3>
+
+            <div class="address">
+              <h3>گالری : طبقه منفي ۲ واحد ۴۸</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>جلسات : طبقه مثبت ۱ واحد ۱۶</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>کارگاه : طبقه منفي ۲ واحد ۴۷</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+          </div>
+
+          <div class="center">
+            <div class="menu">
+              <h3>دسترسی سریع</h3>
+
+              <a href="#" class="item">گوشواره طلا زنانه</a>
+              <a href="#" class="item">حلقه طلا</a>
+              <a href="#" class="item">کالا های تخفیف دار</a>
+              <a href="#" class="item">سرویس و نیم ست طلا</a>
+            </div>
+
+            <div class="menu">
+              <h3>خدمات</h3>
+
+              <a href="#" class="item">راهنمای خرید</a>
+              <a href="faq.html" class="item">سوالات متداول</a>
+              <a href="#" class="item">شرایط و قوانین</a>
+              <a href="contactUs.html" class="item">تماس با ما</a>
+            </div>
+          </div>
+
+          <div class="left">
+            <h3>ارتباط از طریق شبکه های اجتماعی</h3>
+
+            <div class="footerIcons">
+              <a href="#"><img src="media/icons/telegram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/instagram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/whats app.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>
+            تمام حقوق برای گلن محفوظ بوده و استفاده از محتوای گلن تنها با ذکر
+            نام و درج لینک مستقیم مجاز است.
+          </p>
+
+          <a href="#">
+            <img src="media/icons/eNamad.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      //  Script.js
+      const rangevalue = document.querySelector(
+        ".slider-container .price-slider"
+      );
+      const rangeInputvalue = document.querySelectorAll(".range-input input");
+
+      // Set the price gap
+      let priceGap = 500;
+
+      // Adding event listners to price input elements
+      const priceInputvalue = document.querySelectorAll(".price-input input");
+      for (let i = 0; i < priceInputvalue.length; i++) {
+        priceInputvalue[i].addEventListener("input", (e) => {
+          // Parse min and max values of the range input
+          let minp = parseInt(priceInputvalue[0].value);
+          let maxp = parseInt(priceInputvalue[1].value);
+          let diff = maxp - minp;
+
+          if (minp < 0) {
+            alert("حداقل قیمت ۰ تومان است");
+            priceInputvalue[0].value = 0;
+            minp = 0;
+          }
+
+          // Validate the input values
+          if (maxp > 200000000) {
+            alert("حداکثر قیمت ۲۰۰,۰۰۰,۰۰۰ تومان است");
+            priceInputvalue[1].value = 200000000;
+            maxp = 200000000;
+          }
+
+          if (minp > maxp - priceGap) {
+            priceInputvalue[0].value = maxp - priceGap;
+            minp = maxp - priceGap;
+
+            if (minp < 0) {
+              priceInputvalue[0].value = 0;
+              minp = 0;
+            }
+          }
+
+          // Check if the price gap is met
+          // and max price is within the range
+          if (diff >= priceGap && maxp <= rangeInputvalue[1].max) {
+            if (e.target.className === "min-input") {
+              rangeInputvalue[0].value = minp;
+              let value1 = rangeInputvalue[0].max;
+              rangevalue.style.left = `${(minp / value1) * 100}%`;
+            } else {
+              rangeInputvalue[1].value = maxp;
+              let value2 = rangeInputvalue[1].max;
+              rangevalue.style.right = `${100 - (maxp / value2) * 100}%`;
+            }
+          }
+        });
+
+        // Add event listeners to range input elements
+        for (let i = 0; i < rangeInputvalue.length; i++) {
+          rangeInputvalue[i].addEventListener("input", (e) => {
+            let minVal = parseInt(rangeInputvalue[0].value);
+            let maxVal = parseInt(rangeInputvalue[1].value);
+
+            let diff = maxVal - minVal;
+
+            // Check if the price gap is exceeded
+            if (diff < priceGap) {
+              // Check if the input is the min range input
+              if (e.target.className === "min-range") {
+                rangeInputvalue[0].value = maxVal - priceGap;
+              } else {
+                rangeInputvalue[1].value = minVal + priceGap;
+              }
+            } else {
+              // Update price inputs and range progress
+              priceInputvalue[0].value = minVal;
+              priceInputvalue[1].value = maxVal;
+              rangevalue.style.left = `${
+                (minVal / rangeInputvalue[0].max) * 100
+              }%`;
+              rangevalue.style.right = `${
+                100 - (maxVal / rangeInputvalue[1].max) * 100
+              }%`;
+            }
+          });
+        }
+      }
+    </script>
+
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/51e7612045.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  js link  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

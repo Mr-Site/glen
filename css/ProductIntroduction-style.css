@@ -1,0 +1,405 @@
+/* مپ */
+.kadrDarbareMahsool .pageMap {
+  margin-top: 0;
+  border-bottom: 1px solid #ba9664;
+}
+
+.kadrDarbareMahsool .pageMap .container {
+  width: 100%;
+}
+
+.kadrDarbareMahsool .pageMap .container h2 {
+  margin-top: 0;
+}
+
+/* نمایش محصول */
+.namayeshMahsool {
+  margin-top: 50px;
+}
+
+.namayeshMahsool .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: unset;
+}
+
+/* گالری تصاویر محصول */
+
+.namayeshMahsool .container .tasvirMahsool {
+  direction: ltr;
+  width: 30%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tasvirMahsool swiper-container {
+  width: 100%;
+}
+
+.tasvirMahsool swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasvirMahsool swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasvirMahsool swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tasvirMahsool swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.tasvirMahsool .mySwiper {
+  width: 100%;
+  cursor: grabbing;
+}
+
+.tasvirMahsool .mySwiper2 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.tasvirMahsool .mySwiper2 swiper-slide {
+  width: 25%;
+  opacity: 0.4;
+}
+
+.tasvirMahsool .mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* مشخصات و قیمت  */
+
+.kadrDarbareMahsool {
+  width: 68%;
+  height: 600px;
+}
+
+.darbareMahsool {
+  width: calc(100% - 2px);
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* سایز محصول */
+/* رنگ محصول */
+/* وزن محصول */
+
+.sizeMahsool,
+.rangMahsool,
+.vaznMahsool {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: iransans-web;
+  border: none;
+  outline: none;
+  color: #ba9664;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sizeMahsool option,
+.rangMahsool option,
+.vaznMahsool option {
+  background-color: #ba9664;
+  color: #fff;
+}
+
+/* قیمت محصول */
+
+.kadrGheymatMahsool {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  color: #ba9664;
+}
+
+.kadrGheymatMahsool span:first-child {
+  color: #9c8686;
+}
+
+/* افزودن به سبد خرید */
+
+.afzoodanMahsool {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #feebdd;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.afzoodanMahsool h4 {
+  margin: 0;
+}
+
+.afzoodanMahsool:hover {
+  background-color: #9c8686;
+  color: #fff;
+}
+/* آیکون های تبلیغاتی */
+
+.darbareMahsool .specialIcons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.darbareMahsool .specialIcons .item {
+  text-align: center;
+  color: #403b3b;
+  font-size: 15px;
+  font-weight: bold;
+}
+.darbareMahsool .specialIcons .item i {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #9c8686;
+}
+
+/* اطلاعات تکمیلی */
+
+.kadrMoshakhasat {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ba9664;
+}
+
+/* Style tab links */
+.tablink {
+  font-family: iransans-web;
+  margin-left: 5px;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 3px solid transparent;
+  color: #403b3b;
+  background-color: #feebdd;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.tablink:hover {
+  color: #feebdd;
+  background-color: #403b3b;
+}
+
+.tabcontent {
+  display: none;
+  padding: 50px 50px;
+  height: 100%;
+}
+
+/* مشخصات کامل محصول */
+
+#moshkhasatKamel .item:nth-child(even) {
+  background-color: #feebdd;
+}
+
+#moshkhasatKamel .item div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#moshkhasatKamel .item span {
+  width: 50%;
+  display: inline-block;
+  padding: 10px;
+}
+
+#moshkhasatKamel .item span:first-child {
+  color: #ba9664;
+}
+
+#moshkhasatKamel .item span:last-child {
+  color: #9c8686;
+}
+
+/* نظرات کاربران */
+
+.emtiazKarbar {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  color: #ba9664;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+.star-rating [type="radio"] {
+  appearance: none;
+}
+.star-rating i {
+  font-size: 20px;
+}
+
+.star-rating label:is(:hover, :has(~ :hover)) i {
+  transform: scale(1.35);
+  color: #fffdba;
+  animation: jump 0.5s calc(0.3s + (var(--i) - 1) * 0.15s) alternate infinite;
+  cursor: pointer;
+}
+.star-rating label:has(~ :checked) i {
+  color: #faec1b;
+  text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+}
+
+@keyframes jump {
+  0%,
+  50% {
+    transform: translatey(0) scale(1.35);
+  }
+  100% {
+    transform: translatey(-15%) scale(1.35);
+  }
+}
+
+/* فرم نوشتن نظرات و پرسش و پاسخ*/
+
+form {
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+
+form .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form #nameUser,
+form #phoneNumberUser {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+form #matnNazar,
+form #matnSoal {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+form #nameUser,
+form #phoneNumberUser,
+form #matnNazar,
+form #matnSoal {
+  border-radius: 5px;
+  background-color: #feebdd;
+  color: #9c8686;
+  border: none;
+  padding: 10px;
+  font-family: iransans-web;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form #nameUser:focus,
+form #phoneNumberUser:focus,
+form #matnNazar:focus,
+form #matnSoal:focus {
+  outline: none;
+  background-color: #ffdfc8;
+  color: #000;
+}
+
+#ersalNazar {
+  padding: 8px 20px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* سوالات متداول */
+
+
+.accordion {
+  width: 100%;
+  background-color: #403b3b;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.menuActive {
+  border-radius: 10px 10px 0 0;
+}
+
+.menuActive,
+.accordion:hover {
+  background-color: #9c8686;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.menuActive:after {
+  content: "\2212";
+}
+
+.panel {
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  border-radius: 0 0 10px 10px;
+  background-color: #feebdd;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}

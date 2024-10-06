@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>glen</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ProductIntroduction css link -->
+    <link rel="stylesheet" href="css/ProductIntroduction-style.css" />
+  </head>
+  <body onload="startTime()">
+    <!-- بنر -->
+
+    <div class="topHeader">
+      <div class="container">
+        <div>۰۵۱-۳۲۲۸۵۸۵۴</div>
+        <div>امکان ثبت سفارش به صورت ۲۴ ساعته حتی در روز های تعطیل</div>
+        <div class="socialIcons">
+          <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-telegram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- هدر -->
+
+    <header class="header">
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="glenLogo"
+          ><img src="media/Logo/glen logo.png" alt="glen logo"
+        /></a>
+
+        <!-- nav -->
+
+        <nav>
+          <a href="index.html">خانه</a>
+          <a href="gallery.html">گالری</a>
+          <a href="aboutUs.html">معرفی</a>
+          <a href="contactUs.html">تماس با ما</a>
+          <a href="#">اخبار</a>
+          <a href="faq.html">سوالات متداول</a>
+        </nav>
+        <div class="btnContainer">
+          <a href="#" class="login">
+            <i class="fa-solid fa-user fa"></i>
+            ورود / ثبت نام
+          </a>
+          <a href="#" class="shopping"
+            ><i class="fa-solid fa-cart-shopping fa"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- منو اعلانات -->
+
+    <div class="notifMenu">
+      <div class="container">
+        <div class="price">
+          <span>قیمت طلای ۱۸ عیار :</span>
+          <span>۳,۶۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="date">
+          <span>امروز : </span>
+          <span id="clock"> </span>
+          -
+          <span id="Result"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <main>
+      <!-- نمایش محصول -->
+
+      <section class="namayeshMahsool">
+        <div class="container">
+          <!-- تصویر محصول -->
+          <div class="tasvirMahsool">
+            <swiper-container
+              style="
+                --swiper-navigation-size: 30px;
+                --swiper-navigation-color: #403b3b;
+                --swiper-pagination-color: #403b3b;
+              "
+              class="mySwiper"
+              thumbs-swiper=".mySwiper2"
+              loop="true"
+              space-between="10"
+              navigation="true"
+            >
+              <swiper-slide>
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                />
+              </swiper-slide>
+            </swiper-container>
+
+            <swiper-container
+              class="mySwiper2"
+              loop="true"
+              space-between="10"
+              slides-per-view="4"
+              free-mode="true"
+              watch-slides-progress="true"
+            >
+              <swiper-slide>
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                />
+              </swiper-slide>
+              <swiper-slide>
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                />
+              </swiper-slide>
+            </swiper-container>
+          </div>
+
+          <!-- مشخصات و قیمت -->
+          <div class="kadrDarbareMahsool">
+            <!-- مپ -->
+            <div class="pageMap">
+              <div class="container">
+                <h2>دستبند طلا زنانه مدل n</h2>
+
+                <nav class="breadcrumb">
+                  <a href="\">
+                    <span>خانه</span>
+                  </a>
+
+                  <span>/</span>
+
+                  <a href="gallery.html">
+                    <span>گالری</span>
+                  </a>
+
+                  <span>/</span>
+
+                  <a href="gallery.html">
+                    <span>دستبند زنانه</span>
+                  </a>
+
+                  <span>/</span>
+
+                  <a href="gallery.html">
+                    <h1>دستبند طلا زنانه مدل n</h1>
+                  </a>
+                </nav>
+              </div>
+            </div>
+
+            <div class="darbareMahsool">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 10px;
+                "
+              >
+                <!-- کد محصول -->
+                <div class="kadrcodeMahsool">
+                  <span style="color: #ba9664">کد محصول :</span>
+                  <span class="codeMahsool" style="color: #9c8686"
+                    >۱۲۳۴۵۶۷۸۹</span
+                  >
+                </div>
+
+                <!-- مناسب برای ... -->
+                <div class="kadrcodeMahsool">
+                  <span style="color: #ba9664">مناسب برای : </span>
+                  <span class="codeMahsool" style="color: #9c8686">بانوان</span>
+                </div>
+              </div>
+              <!-- سایز , رنگ , وزن محصول -->
+              <div style="display: flex; justify-content: center">
+                <!--انتخاب سایز محصول -->
+                <div>
+                  <span style="color: #9c8686">سایز : </span>
+                  <div>
+                    <select name="sizeMahsool" class="sizeMahsool">
+                      <option value="">سایز مورد نظر را انتخاب کند</option>
+                      <option value="2.5 gram">سایز ۱</option>
+                      <option value="4.5 gram">سایز ۲</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- انتخاب رنگ محصول-->
+
+                <div>
+                  <span style="color: #9c8686">رنگ : </span>
+                  <div>
+                    <select name="rangMahsool" class="rangMahsool">
+                      <option value="">رنگ مورد نظر را انتخاب کند</option>
+                      <option value="2.5 gram">زرد</option>
+                      <option value="4.5 gram">سفید</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- انتخاب وزن محصول-->
+
+                <div>
+                  <span style="color: #9c8686">وزن : </span>
+                  <div>
+                    <select name="vaznMahsool" class="vaznMahsool">
+                      <option value="">وزن مورد نظر را انتخاب کند</option>
+                      <option value="2.5 gram">۲/۵ گرم</option>
+                      <option value="4.5 gram">۳/۵ گرم</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- قیمت -->
+
+              <div class="kadrGheymatMahsool">
+                <span class="gheymatMahsool">۹۹۹,۹۹۹,۹۹۹</span>
+                <span>تومان</span>
+              </div>
+
+              <!-- افزودن به سبد خرید -->
+              <a href="#" class="afzoodanMahsool"
+                ><h4>افزودن به سبد خرید</h4></a
+              >
+
+              <!-- آیکون های تبلیغاتی -->
+              <div class="specialIcons">
+                <div class="item">
+                  <i class="fa-regular fa-clipboard"></i>
+                  <div>ارائه فاکتور معتبر</div>
+                </div>
+
+                <div class="item">
+                  <i class="fa-solid fa-repeat"></i>
+                  <div>امکان تعویض و عودت</div>
+                </div>
+
+                <div class="item">
+                  <i class="fa-solid fa-medal"></i>
+                  <div>ضمانت اصالت کالا</div>
+                </div>
+
+                <div class="item">
+                  <i class="fa-solid fa-truck"></i>
+                  <div>ارسال به سراسر کشور</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="moshakhasat">
+        <div class="container">
+          <!-- مشخصات کامل -->
+          <div class="kadrMoshakhasat">
+            <button
+              class="tablink"
+              onclick="openPage('moshkhasatKamel', this, '3px solid #403b3b')"
+              id="defaultOpen"
+            >
+              مشخصات کامل
+            </button>
+            <button
+              class="tablink"
+              onclick="openPage('nazaraat', this, '3px solid #403b3b')"
+            >
+              نظرات کاربران
+            </button>
+            <button
+              class="tablink"
+              onclick="openPage('porseshKarbar', this, '3px solid #403b3b')"
+            >
+              پرسش و پاسخ
+            </button>
+            <button
+              class="tablink"
+              onclick="openPage('soalatMotadavel', this, '3px solid #403b3b')"
+            >
+              سوالات متدوال
+            </button>
+          </div>
+
+          <div id="moshkhasatKamel" class="tabcontent">
+            <div class="item">
+              <div>
+                <span>عیار :</span>
+                <span>۱۸</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <span>اقلام همراه :</span>
+                <span>دستبند</span>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <span>ابعاد :</span>
+                <span>سانتی متر ۱۸*۱۲*۱۳</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <span>عیار :</span>
+                <span>۱۸</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <span>عیار :</span>
+                <span>۱۸</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <span>عیار :</span>
+                <span>۱۸</span>
+              </div>
+            </div>
+          </div>
+          <!-- نظرات کاربران -->
+          <div id="nazaraat" class="tabcontent">
+            <div>
+              <span style="color: #9c8686; font-size: 15px"
+                >هنوز دیدگاهی ثبت نشده است.</span
+              >
+            </div>
+
+            <div>
+              <p style="color: #403b3b; font-size: 20px">
+                اولین کسی باشید که دیدگاهی مینویسد
+              </p>
+              <p style="color: #9c8686; font-size: 13px">
+                نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری
+                شده‌اند *
+              </p>
+
+              <!-- بخش امتیاز دهی -->
+              <div class="emtiazKarbar">
+                <span style="color: #9c8686">امتیاز شما : </span>
+
+                <p dir="rtl">
+                  <span class="star-rating">
+                    <label for="rate-1" style="--i: 1"
+                      ><i class="fa-solid fa-star"></i
+                    ></label>
+                    <input type="radio" name="rating" id="rate-1" value="1" />
+                    <label for="rate-2" style="--i: 2"
+                      ><i class="fa-solid fa-star"></i
+                    ></label>
+                    <input
+                      type="radio"
+                      name="rating"
+                      id="rate-2"
+                      value="2"
+                      checked
+                    />
+                    <label for="rate-3" style="--i: 3"
+                      ><i class="fa-solid fa-star"></i
+                    ></label>
+                    <input type="radio" name="rating" id="rate-3" value="3" />
+                    <label for="rate-4" style="--i: 4"
+                      ><i class="fa-solid fa-star"></i
+                    ></label>
+                    <input type="radio" name="rating" id="rate-4" value="4" />
+                    <label for="rate-5" style="--i: 5"
+                      ><i class="fa-solid fa-star"></i
+                    ></label>
+                    <input type="radio" name="rating" id="rate-5" value="5" />
+                  </span>
+                </p>
+              </div>
+
+              <!-- فرم نوشتن نظرات -->
+              <!-- فرم ارسال سوالات -->
+              <form action="#">
+                <div class="container">
+                  <input
+                    type="text"
+                    name="nameUser"
+                    id="nameUser"
+                    placeholder="نام"
+                  />
+
+                  <input
+                    type="number"
+                    name="phoneNumberUser"
+                    id="phoneNumberUser"
+                    placeholder="شماره همراه"
+                  />
+
+                  <textarea
+                    name="matnNazar"
+                    id="matnNazar"
+                    placeholder="متن پیام"
+                  ></textarea>
+
+                  <input type="submit" id="ersalNazar" value="ارسال" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- پرسش و پاسخ -->
+          <div id="porseshKarbar" class="tabcontent">
+            <div>
+              <span style="color: #9c8686; font-size: 15px"
+                >هنوز پرسشی ثبت نشده است.</span
+              >
+            </div>
+
+            <div>
+              <p style="color: #403b3b; font-size: 20px">
+                پرسش خودرا مطرح کنید
+              </p>
+
+              <!-- فرم نوشتن نظرات -->
+              <!-- فرم ارسال سوالات -->
+              <form action="#">
+                <div class="container">
+                  <input
+                    type="text"
+                    name="nameUser"
+                    id="nameUser"
+                    placeholder="نام"
+                  />
+
+                  <textarea
+                    name="matnSoal"
+                    id="matnSoal"
+                    placeholder="متن سوال"
+                  ></textarea>
+
+                  <input type="submit" id="ersalNazar" value="ارسال" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- سوالات متداول -->
+          <div id="soalatMotadavel" class="tabcontent">
+            <button class="accordion">متن سوال ؟</button>
+            <div class="panel">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص
+              </p>
+            </div>
+
+            <button class="accordion">متن سوال ؟</button>
+            <div class="panel">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص
+              </p>
+            </div>
+
+            <button class="accordion">متن سوال ؟</button>
+            <div class="panel">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص
+              </p>
+            </div>
+
+            <button class="accordion">متن سوال ؟</button>
+            <div class="panel">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+                جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- کالا های مشابه -->
+
+      <section class="kalayeMoshabeh">
+        <section id="s7">
+          <div class="container">
+            <div class="menuHeader">
+              <h2 class="titre">پر فروش ترین محصولات</h2>
+              <a href="#" class="more">مشاهده همه</a>
+            </div>
+
+            <div class="swiper">
+              <swiper-container
+                style="
+                  --swiper-navigation-color: #403b3b;
+                  --swiper-pagination-color: #403b3b;
+                "
+                class="mySwiper s7Swiper"
+                init="false"
+                pagination="true"
+                pagination-clickable="true"
+                autoplay-delay="5000"
+                autoplay-disable-on-interaction="false"
+                grab-cursor="true"
+                keyboard="true"
+                navigation="true"
+              >
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="mojoodNist">موجود نیست</span>
+
+                    <h3 class="pName">سرویس طلا</h3>
+                    <div class="info">
+                      <span class="weight">۲/۵ گرم</span>
+                      <span class="price"><span>۰</span> تومان</span>
+                    </div>
+                  </a>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- فوتر -->
+
+    <footer>
+      <div class="container">
+        <div class="footerLogo">
+          <img src="media/logo/GLEN LOGO FINAL ۲.png" alt="" />
+          <h3>متنوع ، به صرفه و با كيفيت</h3>
+        </div>
+        <div class="footerTop">
+          <div class="right">
+            <h3 class="address">آدرس : مشهد ، چهار طبقه ، پاساژ لیدوما</h3>
+
+            <div class="address">
+              <h3>گالری : طبقه منفي ۲ واحد ۴۸</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>جلسات : طبقه مثبت ۱ واحد ۱۶</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>کارگاه : طبقه منفي ۲ واحد ۴۷</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+          </div>
+
+          <div class="center">
+            <div class="menu">
+              <h3>دسترسی سریع</h3>
+
+              <a href="#" class="item">گوشواره طلا زنانه</a>
+              <a href="#" class="item">حلقه طلا</a>
+              <a href="#" class="item">کالا های تخفیف دار</a>
+              <a href="#" class="item">سرویس و نیم ست طلا</a>
+            </div>
+
+            <div class="menu">
+              <h3>خدمات</h3>
+
+              <a href="#" class="item">راهنمای خرید</a>
+              <a href="faq.html" class="item">سوالات متداول</a>
+              <a href="#" class="item">شرایط و قوانین</a>
+              <a href="contactUs.html" class="item">تماس با ما</a>
+            </div>
+          </div>
+
+          <div class="left">
+            <h3>ارتباط از طریق شبکه های اجتماعی</h3>
+
+            <div class="footerIcons">
+              <a href="#"><img src="media/icons/telegram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/instagram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/whats app.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>
+            تمام حقوق برای گلن محفوظ بوده و استفاده از محتوای گلن تنها با ذکر
+            نام و درج لینک مستقیم مجاز است.
+          </p>
+
+          <a href="#">
+            <img src="media/icons/eNamad.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- swiper link -->
+
+    <!-- تصاویر محصول -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+      // تب ها
+
+      function openPage(pageName, elmnt, border) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.borderBottom = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.borderBottom = border;
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
+
+    <!-- زیرمنو -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("menuActive");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/51e7612045.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  js link  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

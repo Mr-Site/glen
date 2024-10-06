@@ -1,0 +1,114 @@
+/* کادر معرفی */
+.kadrMoarefi {
+  height: 400px;
+  overflow: hidden;
+}
+
+.kadrMoarefi .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.aksMoarefi {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.kadrMatnMoarefi {
+  width: 50%;
+  text-align: justify;
+}
+
+.kadrMatnMoarefi h3 {
+  color: #696565;
+  font-size: 25px;
+}
+
+.kadrMatnMoarefi p {
+  color: #9c8686;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+/* special icons */
+
+.container .specialIcons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.container .specialIcons .item {
+  text-align: center;
+  color: #403b3b;
+  font-size: 15px;
+  font-weight: bold;
+}
+.container .specialIcons .item i {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #9c8686;
+}
+
+/* زیرمنو  (سوالات متداول)*/
+
+/* #soalat h3 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+} */
+
+#soalat {
+  margin: 50px 0;
+}
+
+.accordion {
+  width: 100%;
+  background-color: #403b3b;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.menuActive {
+  border-radius: 10px 10px 0 0;
+}
+
+.menuActive,
+.accordion:hover {
+  background-color: #9c8686;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.menuActive:after {
+  content: "\2212";
+}
+
+.panel {
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  border-radius: 0 0 10px 10px;
+  background-color: #feebdd;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}

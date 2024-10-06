@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>glen</title>
 
-    <!-- css link -->
+    <!-- global css link -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- this page css link -->
+    <link rel="stylesheet" href="css/faq-style.css" />
   </head>
   <body onload="startTime()">
     <!-- بنر -->
@@ -36,9 +39,9 @@
 
         <nav>
           <a href="index.html">خانه</a>
-          <a href="#">گالری</a>
-          <a href="#">معرفی</a>
-          <a href="#">تماس با ما</a>
+          <a href="gallery.html">گالری</a>
+          <a href="aboutUs.html">معرفی</a>
+          <a href="contactUs.html">تماس با ما</a>
           <a href="#">اخبار</a>
           <a href="faq.html">سوالات متداول</a>
         </nav>
@@ -95,7 +98,7 @@
     <!-- main -->
 
     <div class="container">
-      <p style="width: 70%; text-align: justify">
+      <p style="width: 70%; text-align: justify; color: #9c8686">
         در این بخش می‌توانید جواب پرسش‌های خود را در زمینه نحوه ثبت سفارش، ارسال
         کالا و شیوه‌های پرداخت، پیدا کنید. چنانچه جواب پرسش شما در این قسمت پیدا
         نشد. در قسمت ارتباط با ما می‌توانید پیام بگذارید تا کارشناسان فروش ما
@@ -104,7 +107,7 @@
     </div>
 
     <main>
-      <div class="container">
+      <section class="container">
         <div class="kadrSoal">
           <button
             class="tablink"
@@ -327,7 +330,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- فوتر -->
@@ -372,9 +375,9 @@
               <h3>خدمات</h3>
 
               <a href="#" class="item">راهنمای خرید</a>
-              <a href="#" class="item">سوالات متداول</a>
+              <a href="faq.html" class="item">سوالات متداول</a>
               <a href="#" class="item">شرایط و قوانین</a>
-              <a href="#" class="item">تماس با ما</a>
+              <a href="contactUs.html" class="item">تماس با ما</a>
             </div>
           </div>
 
@@ -428,7 +431,7 @@
 
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
+          this.classList.toggle("menuActive");
           var panel = this.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
