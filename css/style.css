@@ -184,7 +184,6 @@ swiper-slide a:active {
 
 #kadrSabtNam {
   opacity: 0;
-
   overflow: hidden;
   z-index: -9999;
   text-align: center;
@@ -198,6 +197,10 @@ swiper-slide a:active {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   transition: 0.3s;
+}
+
+#kadrSabtNam .container {
+  width: 97%;
 }
 
 #kadrSabtNam h4 {
