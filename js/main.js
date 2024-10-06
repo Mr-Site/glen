@@ -89,27 +89,40 @@ function checkTime(i) {
 // فرم ورود / ثبت نام
 
 // باز شدن فرم
+let backSabtNam = document.getElementById("backSabtNam");
+let kadrSabtNam = document.getElementById("kadrSabtNam");
 
 function openKadrLogin() {
-  document.getElementById("backSabtNam").style.opacity = "1";
-  // document.getElementById("backSabtNam").style.width = "100%";
-  document.getElementById("backSabtNam").style.zIndex = "9999";
-  document.getElementById("backSabtNam").style.height = "100vh";
-  document.getElementById("kadrSabtNam").style.opacity = "1";
-  // document.getElementById("kadrSabtNam").style.width = "40%";
-  document.getElementById("kadrSabtNam").style.zIndex = "9999";
+  backSabtNam.style.opacity = "1";
+  backSabtNam.style.zIndex = "9999";
+  backSabtNam.style.height = "100vh";
+  kadrSabtNam.style.opacity = "1";
+  kadrSabtNam.style.zIndex = "9999";
 }
 
 // بسته شدن فرم
 
 function closeKadrLogin() {
-  document.getElementById("backSabtNam").style.opacity = "0";
-  // document.getElementById("backSabtNam").style.width = "0px";
-  document.getElementById("backSabtNam").style.zIndex = "-9999";
-  document.getElementById("backSabtNam").style.height = "0px";
-  document.getElementById("kadrSabtNam").style.opacity = "0";
-  // document.getElementById("kadrSabtNam").style.width = "0px";
-  document.getElementById("kadrSabtNam").style.zIndex = "-9999";
+  backSabtNam.style.opacity = "0";
+  backSabtNam.style.zIndex = "-9999";
+  backSabtNam.style.height = "0px";
+  kadrSabtNam.style.opacity = "0";
+  kadrSabtNam.style.zIndex = "-9999";
+}
+
+// تایید فرم ثبت نام
+
+function taeedShom() {
+  let phoneNumberUser = document.getElementById("phoneNumberUser").value;
+  if (
+    isNaN(phoneNumberUser) ||
+    phoneNumberUser.length < 11 ||
+    phoneNumberUser.length > 11
+  ) {
+    alert("لطفا شماره را به صورت صحیح وارد نمایید");
+  } else {
+    alert("ثبت نام موفقیت آمیز بود");
+  }
 }
 
 // اسلایدر
