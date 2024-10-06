@@ -167,6 +167,92 @@ swiper-slide a:active {
   font-weight: 500;
 }
 
+/* فرم ورود / ثبت نام */
+
+#backSabtNam {
+  opacity: 0;
+  overflow: hidden;
+  z-index: -9999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+#kadrSabtNam {
+  opacity: 0;
+
+  overflow: hidden;
+  z-index: -9999;
+  text-align: center;
+  width: 40%;
+  background-color: #fff;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#kadrSabtNam h4 {
+  font-size: 25px;
+  color: #403b3b;
+}
+
+#kadrSabtNam h3 {
+  margin-bottom: 30px;
+  color: #403b3b;
+}
+
+#kadrSabtNam .formSabtnam {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#kadrSabtNam .formSabtnam #phoneNumberUser {
+  margin-bottom: 30px;
+}
+
+.formSabtnam #phoneNumberUser {
+  width: 96%;
+  border-radius: 5px;
+  background-color: #feebdd;
+  color: #9c8686;
+  border: none;
+  padding: 10px;
+  font-family: iransans-web;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formSabtnam #phoneNumberUser:focus {
+  outline: none;
+  background-color: #ffdfc8;
+  color: #000;
+}
+
+.formSabtnam #ersalShomare {
+  padding: 8px 20px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */
 /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */ /* خانه */
 

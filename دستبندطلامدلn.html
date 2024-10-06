@@ -46,7 +46,7 @@
           <a href="faq.html">سوالات متداول</a>
         </nav>
         <div class="btnContainer">
-          <a href="#" class="login">
+          <a href="#" class="login" onclick=" openKadrLogin()">
             <i class="fa-solid fa-user fa"></i>
             ورود / ثبت نام
           </a>
@@ -72,6 +72,42 @@
           -
           <span id="Result"></span>
         </div>
+      </div>
+    </div>
+
+    <!-- فرم ورود / ثبت نام -->
+    <div id="backSabtNam" onclick="closeKadrLogin()"></div>
+    <div id="kadrSabtNam">
+      <div class="container">
+        <div style="text-align: left; margin: 10px 0">
+          <a href="#"
+            ><i
+              class="fa-solid fa-xmark fa"
+              style="cursor: pointer"
+              id="closeLoginForm"
+              onclick="closeKadrLogin()"
+            ></i
+          ></a>
+        </div>
+        <h4>ورود / ثبت نام</h4>
+
+        <h3>شماره موبایل خود را وارد کنید</h3>
+
+        <form action="#" class="formSabtnam">
+          <input type="text" name="phoneNumberUser" id="phoneNumberUser" />
+
+          <div style="text-align: left">
+            <input type="submit" id="ersalShomare" value="ورود به گلن" />
+          </div>
+        </form>
+
+        <p>
+          با ورود و یا ثبت نام در سایت شما
+          <a href="#">شرایط و قوانین</a>
+          استفاده از سرویس های سایت و
+          <a href="#">قوانین حریم خصوصی</a>
+          آن را می‌پذیرید.
+        </p>
       </div>
     </div>
 
@@ -402,6 +438,7 @@
 
               <!-- فرم نوشتن نظرات -->
               <!-- فرم ارسال سوالات -->
+
               <form action="#">
                 <div class="container">
                   <input

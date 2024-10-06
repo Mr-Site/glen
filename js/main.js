@@ -86,6 +86,32 @@ function checkTime(i) {
   return i;
 }
 
+// فرم ورود / ثبت نام
+
+// باز شدن فرم
+
+function openKadrLogin() {
+  document.getElementById("backSabtNam").style.opacity = "1";
+  // document.getElementById("backSabtNam").style.width = "100%";
+  document.getElementById("backSabtNam").style.zIndex = "9999";
+  document.getElementById("backSabtNam").style.height = "100vh";
+  document.getElementById("kadrSabtNam").style.opacity = "1";
+  // document.getElementById("kadrSabtNam").style.width = "40%";
+  document.getElementById("kadrSabtNam").style.zIndex = "9999";
+}
+
+// بسته شدن فرم
+
+function closeKadrLogin() {
+  document.getElementById("backSabtNam").style.opacity = "0";
+  // document.getElementById("backSabtNam").style.width = "0px";
+  document.getElementById("backSabtNam").style.zIndex = "-9999";
+  document.getElementById("backSabtNam").style.height = "0px";
+  document.getElementById("kadrSabtNam").style.opacity = "0";
+  // document.getElementById("kadrSabtNam").style.width = "0px";
+  document.getElementById("kadrSabtNam").style.zIndex = "-9999";
+}
+
 // اسلایدر
 
 let slideIndex = 1;

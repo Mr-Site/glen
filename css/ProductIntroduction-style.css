@@ -337,8 +337,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-form #nameUser:focus,
 form #phoneNumberUser:focus,
+form #nameUser,
 form #matnNazar:focus,
 form #matnSoal:focus {
   outline: none;
@@ -356,7 +356,6 @@ form #matnSoal:focus {
 }
 
 /* سوالات متداول */
-
 
 .accordion {
   width: 100%;
