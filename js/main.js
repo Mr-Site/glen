@@ -113,15 +113,15 @@ function closeKadrLogin() {
 // تایید فرم ثبت نام
 
 function taeedShom() {
-  let phoneNumberUser = document.getElementById("phoneNumberUser").value;
+  phoneNumberUser = document.getElementById("phoneNumberUser").value;
   if (
     isNaN(phoneNumberUser) ||
     phoneNumberUser.length < 11 ||
     phoneNumberUser.length > 11
   ) {
-    alert("لطفا شماره را به صورت صحیح وارد نمایید");
+    alert("لطفا شماره را به صورت صحیح (لاتین) وارد نمایید");
   } else {
-    alert("ثبت نام موفقیت آمیز بود");
+    alert("ورود  موفقیت آمیز بود");
   }
 }
 
@@ -270,3 +270,39 @@ Object.assign(swiperEl3, {
   },
 });
 swiperEl3.initialize();
+
+// افزودن به سبد خرید
+
+function openKadrNotif() {
+  let backNotifSabad = document.getElementById("backNotifSabad");
+  let kadrNotifSabad = document.getElementById("kadrNotifSabad");
+
+  backNotifSabad.style.opacity = "1";
+  backNotifSabad.style.zIndex = "9999";
+
+  kadrNotifSabad.style.opacity = "1";
+  kadrNotifSabad.style.zIndex = "9999";
+
+  closeNotifDealy = setTimeout(closeKadrNotif, 5000);
+}
+
+function closeKadrNotif() {
+  let backNotifSabad = document.getElementById("backNotifSabad");
+  let kadrNotifSabad = document.getElementById("kadrNotifSabad");
+
+  backNotifSabad.style.opacity = "0";
+  backNotifSabad.style.zIndex = "-9999";
+
+  kadrNotifSabad.style.opacity = "0";
+  kadrNotifSabad.style.zIndex = "-9999";
+
+  clearTimeout(closeNotifDealy);
+}
+
+function setNotifDelay() {
+  setTimeout(closeKadrNotif, 5000);
+}
+
+function clearNotifDelay() {
+  clearTimeout(closeNotifDealy);
+}
