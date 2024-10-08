@@ -279,16 +279,14 @@ function openKadrNotif() {
   let backNotifSabad = document.getElementById("backNotifSabad");
   let kadrNotifSabad = document.getElementById("kadrNotifSabad");
 
-  let tasvirMahsool = document.querySelector(".tasvirMahsool").src;
-  let nameMahsool = document.querySelector(".nameMahsool").innerHTML;
-  let vaznMahsool = document.querySelector(".vaznMahsool");
-  let MatnVaznMahsool = vaznMahsool.options[vaznMahsool.selectedIndex].text;
-
-  let rangMahsool = document.querySelector(".rangMahsool");
-  let MatnRangMahsool = rangMahsool.options[rangMahsool.selectedIndex].text;
-
-  let sizeMahsool = document.querySelector(".sizeMahsool");
-  let MatnSizeMahsool = sizeMahsool.options[sizeMahsool.selectedIndex].text;
+  tasvirMahsool = document.querySelector(".tasvirMahsool").src;
+  nameMahsool = document.querySelector(".nameMahsool").innerHTML;
+  vaznMahsool = document.querySelector(".vaznMahsool");
+  MatnVaznMahsool = vaznMahsool.options[vaznMahsool.selectedIndex].text;
+  rangMahsool = document.querySelector(".rangMahsool");
+  MatnRangMahsool = rangMahsool.options[rangMahsool.selectedIndex].text;
+  sizeMahsool = document.querySelector(".sizeMahsool");
+  MatnSizeMahsool = sizeMahsool.options[sizeMahsool.selectedIndex].text;
 
   if (
     MatnVaznMahsool == "وزن مورد نظر را انتخاب کنید" ||
