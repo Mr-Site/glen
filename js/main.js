@@ -273,17 +273,46 @@ swiperEl3.initialize();
 
 // افزودن به سبد خرید
 
+// notif
+
 function openKadrNotif() {
   let backNotifSabad = document.getElementById("backNotifSabad");
   let kadrNotifSabad = document.getElementById("kadrNotifSabad");
 
-  backNotifSabad.style.opacity = "1";
-  backNotifSabad.style.zIndex = "9999";
+  let tasvirMahsool = document.querySelector(".tasvirMahsool").src;
+  let nameMahsool = document.querySelector(".nameMahsool").innerHTML;
+  let vaznMahsool = document.querySelector(".vaznMahsool");
+  let MatnVaznMahsool = vaznMahsool.options[vaznMahsool.selectedIndex].text;
 
-  kadrNotifSabad.style.opacity = "1";
-  kadrNotifSabad.style.zIndex = "9999";
+  let rangMahsool = document.querySelector(".rangMahsool");
+  let MatnRangMahsool = rangMahsool.options[rangMahsool.selectedIndex].text;
 
-  closeNotifDealy = setTimeout(closeKadrNotif, 5000);
+  let sizeMahsool = document.querySelector(".sizeMahsool");
+  let MatnSizeMahsool = sizeMahsool.options[sizeMahsool.selectedIndex].text;
+
+  if (
+    MatnVaznMahsool == "وزن مورد نظر را انتخاب کنید" ||
+    MatnRangMahsool == "رنگ مورد نظر را انتخاب کنید" ||
+    MatnSizeMahsool == "سایز مورد نظر را انتخاب کنید"
+  ) {
+    alert("لطفا گزینه های مدنظر خود را انتخاب کنید");
+  } else {
+    // کادر
+
+    backNotifSabad.style.opacity = "1";
+    backNotifSabad.style.zIndex = "9999";
+
+    kadrNotifSabad.style.opacity = "1";
+    kadrNotifSabad.style.zIndex = "9999";
+
+    // تصویر وزن اسم
+
+    document.getElementById("tasvirMahsool").src = tasvirMahsool;
+    document.getElementById("namMahsool").innerHTML = nameMahsool;
+    document.getElementById("vaznMahsool").innerHTML = MatnVaznMahsool;
+
+    closeNotifDealy = setTimeout(closeKadrNotif, 5000);
+  }
 }
 
 function closeKadrNotif() {

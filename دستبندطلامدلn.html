@@ -152,18 +152,13 @@
 
         <div style="display: flex">
           <div style="width: 20%">
-            <img
-              src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
-              alt=""
-              width="100%"
-              id="tasvirMahsool"
-            />
+            <img src="" alt="" width="100%" id="tasvirMahsool" />
           </div>
 
           <div style="padding-right: 30px">
-            <h4 id="namMahsool">دستبند طلا مدل n</h4>
-            <h5 id="sizeMahsool">
-              <i class="fa-solid fa-ruler"></i><span>۲/۵ گرم</span>
+            <h4 id="namMahsool"></h4>
+            <h5 id="vaznMahsool">
+              <i class="fa-solid fa-ruler"></i>
             </h5>
           </div>
         </div>
@@ -182,7 +177,7 @@
       <section class="namayeshMahsool">
         <div class="container">
           <!-- تصویر محصول -->
-          <div class="tasvirMahsool">
+          <div class="kadrTasvirMahsool">
             <swiper-container
               style="
                 --swiper-navigation-size: 30px;
@@ -197,6 +192,7 @@
             >
               <swiper-slide>
                 <img
+                  class="tasvirMahsool"
                   src="https://media.cnn.com/api/v1/images/stellar/prod/skin-studio-lifestyle-cnnu.jpg?q=h_1018,w_1810,x_0,y_0"
                 />
               </swiper-slide>
@@ -243,7 +239,7 @@
             <!-- مپ -->
             <div class="pageMap">
               <div class="container">
-                <h2>دستبند طلا زنانه مدل n</h2>
+                <h2 class="nameMahsool">دستبند طلا زنانه مدل n</h2>
 
                 <nav class="breadcrumb">
                   <a href="\">
@@ -300,9 +296,9 @@
                   <span style="color: #9c8686">سایز : </span>
                   <div>
                     <select name="sizeMahsool" class="sizeMahsool">
-                      <option value="">سایز مورد نظر را انتخاب کند</option>
-                      <option value="2.5 gram">سایز ۱</option>
-                      <option value="4.5 gram">سایز ۲</option>
+                      <option value="">سایز مورد نظر را انتخاب کنید</option>
+                      <option value="size 1">سایز ۱</option>
+                      <option value="size 2">سایز ۲</option>
                     </select>
                   </div>
                 </div>
@@ -313,9 +309,9 @@
                   <span style="color: #9c8686">رنگ : </span>
                   <div>
                     <select name="rangMahsool" class="rangMahsool">
-                      <option value="">رنگ مورد نظر را انتخاب کند</option>
-                      <option value="2.5 gram">زرد</option>
-                      <option value="4.5 gram">سفید</option>
+                      <option value="">رنگ مورد نظر را انتخاب کنید</option>
+                      <option value="gold">زرد</option>
+                      <option value="white">سفید</option>
                     </select>
                   </div>
                 </div>
@@ -326,7 +322,7 @@
                   <span style="color: #9c8686">وزن : </span>
                   <div>
                     <select name="vaznMahsool" class="vaznMahsool">
-                      <option value="">وزن مورد نظر را انتخاب کند</option>
+                      <option value="">وزن مورد نظر را انتخاب کنید</option>
                       <option value="2.5 gram">۲/۵ گرم</option>
                       <option value="4.5 gram">۳/۵ گرم</option>
                     </select>

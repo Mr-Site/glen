@@ -45,11 +45,11 @@
   color: #403b3b;
 }
 
-#kadrNotifSabad #sizeMahsool {
+#kadrNotifSabad #vaznMahsool {
   color: #ba9664;
 }
 
-#kadrNotifSabad #sizeMahsool span {
+#kadrNotifSabad #vaznMahsool span {
   padding-right: 5px;
 }
 
@@ -84,7 +84,7 @@
 
 /* گالری تصاویر محصول */
 
-.namayeshMahsool .container .tasvirMahsool {
+.namayeshMahsool .container .kadrTasvirMahsool {
   direction: ltr;
   width: 30%;
   min-height: 400px;
@@ -93,11 +93,11 @@
   justify-content: space-between;
 }
 
-.tasvirMahsool swiper-container {
+.kadrTasvirMahsool swiper-container {
   width: 100%;
 }
 
-.tasvirMahsool swiper-slide {
+.kadrTasvirMahsool swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -106,42 +106,42 @@
   align-items: center;
 }
 
-.tasvirMahsool swiper-slide img {
+.kadrTasvirMahsool swiper-slide img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.tasvirMahsool swiper-container {
+.kadrTasvirMahsool swiper-container {
   width: 100%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.tasvirMahsool swiper-slide {
+.kadrTasvirMahsool swiper-slide {
   background-size: cover;
   background-position: center;
 }
 
-.tasvirMahsool .mySwiper {
+.kadrTasvirMahsool .mySwiper {
   width: 100%;
   cursor: grabbing;
 }
 
-.tasvirMahsool .mySwiper2 {
+.kadrTasvirMahsool .mySwiper2 {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
 }
 
-.tasvirMahsool .mySwiper2 swiper-slide {
+.kadrTasvirMahsool .mySwiper2 swiper-slide {
   width: 25%;
   opacity: 0.4;
 }
 
-.tasvirMahsool .mySwiper2 .swiper-slide-thumb-active {
+.kadrTasvirMahsool .mySwiper2 .swiper-slide-thumb-active {
   opacity: 1;
 }
 
