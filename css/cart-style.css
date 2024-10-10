@@ -1,0 +1,90 @@
+/* آیتم های سبد خرید */
+section .container {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.namayeshItem {
+  max-width: 40%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ba9664;
+}
+
+.item:last-child {
+  border: 1px solid transparent;
+}
+
+.item:hover {
+  border-bottom: none;
+  border: 1px solid #ba9664;
+  border-radius: 10px;
+}
+
+.item .kadrTasvirItem {
+  width: 20%;
+}
+
+.item .tasvirItem {
+  width: 100%;
+}
+
+.moshakhasatItem {
+  padding-right: 20px;
+}
+
+.moshakhasatItem .nameItem {
+  margin-top: 0;
+  font-size: 18px;
+  color: #403b3b;
+}
+
+.geymatItem span:first-child,
+.meghdarTakhfif span:first-child,
+.jamKol span:first-child {
+  color: #9c8686;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.moshakhasatItem h4 {
+  font-weight: 500;
+  font-size: 13px;
+  color: #ba9664;
+}
+
+/* صورتحساب */
+
+.sooratHesab {
+  width: 25%;
+  height: max-content;
+  padding: 15px;
+  font-size: 20px;
+  color: #9c8686;
+  border: 1px solid #ba9664;
+  border-radius: 10px;
+}
+
+.sooratHesab div:last-child {
+  text-align: center;
+}
+
+.sooratHesab a {
+  padding: 10px 50px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border-radius: 10px;
+}
+
+.sooratHesab a:hover {
+  background-color: #2d2c2c;
+}
