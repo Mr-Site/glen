@@ -333,3 +333,24 @@ function setNotifDelay() {
 function clearNotifDelay() {
   clearTimeout(closeNotifDealy);
 }
+
+// فرم آدرس
+
+function openFormAdres() {
+  backFormAdres = document.querySelector(".backKadrFormAdres");
+  formAdres = document.querySelector(".kadrFormAdres");
+
+  backFormAdres.style.opacity = "1";
+  backFormAdres.style.zIndex = "999";
+
+  formAdres.style.opacity = "1";
+  formAdres.style.zIndex = "9990";
+}
+
+function closeFormAdres() {
+  backFormAdres.style.opacity = "0";
+  backFormAdres.style.zIndex = "-999";
+
+  formAdres.style.opacity = "0";
+  formAdres.style.zIndex = "-9990";
+}

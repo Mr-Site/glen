@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>glen</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- shipping css link -->
+    <link rel="stylesheet" href="css/shipping-style.css" />
+  </head>
+  <body onload="startTime()">
+    <!-- بنر -->
+
+    <div class="topHeader">
+      <div class="container">
+        <div>۰۵۱-۳۲۲۸۵۸۵۴</div>
+        <div>امکان ثبت سفارش به صورت ۲۴ ساعته حتی در روز های تعطیل</div>
+        <div class="socialIcons">
+          <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-telegram"></i></a>
+          <a href="#"> <i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- هدر -->
+
+    <header class="header">
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="glenLogo"
+          ><img src="media/Logo/glen logo.png" alt="glen logo"
+        /></a>
+
+        <!-- nav -->
+
+        <nav>
+          <a href="index.html">خانه</a>
+          <a href="gallery.html">گالری</a>
+          <a href="aboutUs.html">معرفی</a>
+          <a href="contactUs.html">تماس با ما</a>
+          <a href="#">اخبار</a>
+          <a href="faq.html">سوالات متداول</a>
+        </nav>
+        <div class="btnContainer">
+          <a href="#" class="login" onclick=" openKadrLogin()">
+            <i class="fa-solid fa-user fa"></i>
+            ورود / ثبت نام
+          </a>
+          <a href="cart.html" class="shopping"
+            ><i class="fa-solid fa-cart-shopping fa"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- منو اعلانات -->
+
+    <div class="notifMenu">
+      <div class="container">
+        <div class="price">
+          <span>قیمت طلای ۱۸ عیار :</span>
+          <span>۳,۶۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="date">
+          <span>امروز : </span>
+          <span id="clock"> </span>
+          -
+          <span id="Result"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- فرم ورود / ثبت نام -->
+    <div id="backSabtNam" onclick="closeKadrLogin()"></div>
+    <div id="kadrSabtNam">
+      <div class="container">
+        <div style="text-align: right; margin: 10px 0">
+          <a href="#"
+            ><i
+              class="fa-solid fa-xmark fa"
+              style="cursor: pointer"
+              id="closeLoginForm"
+              onclick="closeKadrLogin()"
+            ></i
+          ></a>
+        </div>
+        <h4>ورود / ثبت نام</h4>
+
+        <h3>شماره موبایل خود را وارد کنید</h3>
+
+        <form action="#" class="formSabtnam">
+          <input type="text" name="phoneNumberUser" id="phoneNumberUser" />
+
+          <div style="text-align: left">
+            <input
+              type="submit"
+              id="ersalShomare"
+              value="ورود به گلن"
+              onclick="taeedShom()"
+            />
+          </div>
+        </form>
+
+        <p>
+          با ورود و یا ثبت نام در سایت شما
+          <a href="#">شرایط و قوانین</a>
+          استفاده از سرویس های سایت و
+          <a href="#">قوانین حریم خصوصی</a>
+          آن را می‌پذیرید.
+        </p>
+      </div>
+    </div>
+
+    <!-- فرم اطلاعات آدرس-->
+    <div class="backKadrFormAdres" onclick="closeFormAdres()"></div>
+    <div class="kadrFormAdres">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 20px;
+          color: #9c8686;
+          border-bottom: 1px solid #ba9664;
+        "
+      >
+        <h4 style="margin: 0">افزودن آدرس جدید</h4>
+        <i
+          class="fa-solid fa-xmark fa"
+          style="cursor: pointer"
+          onclick="closeFormAdres()"
+        ></i>
+      </div>
+
+      <form action="#" id="formAdres">
+        <!-- انتخاب استان و شهر-->
+        <div class="ir-select">
+          <div>
+            <label for="ostan">استان</label>
+            <select class="ir-province" id="ostan"></select>
+          </div>
+          <div>
+            <label for="shahr">شهر</label>
+            <select class="ir-city" id="shahr"></select>
+          </div>
+        </div>
+
+        <!-- آدرس -->
+        <div style="width: 100%">
+          <label for="matnAdres">آدرس</label>
+          <input type="text" name="adres" id="matnAdres" placeholder="آدرس" />
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: space-between">
+          <div style="width: 30%">
+            <!-- پلاک -->
+            <label for="pelak">پلاک</label>
+            <input
+              type="number"
+              name="pelak"
+              id="pelak"
+              placeholder="پلاک"
+              minlength="1"
+              maxlength="4"
+            />
+          </div>
+
+          <div style="width: 30%">
+            <!-- واحد -->
+
+            <label for="vahed">واحد</label>
+            <input type="number" name="vahed" id="vahed" placeholder="واحد" />
+          </div>
+
+          <div style="width: 30%">
+            <!-- کد پستی -->
+
+            <label for="kodPosti">کد پستی</label>
+            <input
+              type="number"
+              name="kodPosti"
+              id="kodPosti"
+              placeholder="کد پستی"
+            />
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; text-align: left; width: 100%">
+          <input type="submit" value="ذخیره آدرس" id="saveAdres" />
+        </div>
+      </form>
+    </div>
+
+    <div class="pageMap">
+      <div class="container">
+        <h2>سبد خرید</h2>
+
+        <!-- مپ -->
+
+        <nav class="breadcrumb">
+          <a href="index.html">
+            <span>خانه</span>
+          </a>
+
+          <span>/</span>
+
+          <a href="cart.html">
+            <span>سبد خرید</span>
+          </a>
+
+          <span>/</span>
+
+          <a href="shipping.html">
+            <h1>تکمیل اطلاعات</h1>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <main>
+      <section>
+        <div class="container">
+          <!-- فرم اطلاعات گیرنده -->
+
+          <div class="kadrEtelaatUser">
+            <form action="#" class="etelaatUser">
+              <!-- نام گیرنده -->
+              <div class="kadrForm">
+                <label for="nameUser"
+                  >نام گیرنده <span style="color: #ba9664">*</span></label
+                >
+                <input
+                  type="text"
+                  id="nameUser"
+                  name="nameUser"
+                  placeholder="نام گیرنده"
+                />
+              </div>
+
+              <!--  نام خانوادگی گیرنده -->
+
+              <div class="kadrForm">
+                <label for="familUser">
+                  نام خانوادگی گیرنده
+                  <span style="color: #ba9664">*</span></label
+                >
+                <input
+                  type="text"
+                  id="familUser"
+                  name="familUser"
+                  placeholder="نام خانوادگی گیرنده"
+                />
+              </div>
+
+              <!-- شماره همراه گیرنده -->
+
+              <div class="kadrForm">
+                <label for="phoneNumberUser"
+                  >شماره همراه <span style="color: #ba9664">*</span></label
+                >
+                <input
+                  type="number"
+                  id="phoneNumberUser"
+                  name="phoneNumberUser"
+                  placeholder="شماره همراه "
+                />
+              </div>
+
+              <!-- کد ملی گیرنده -->
+
+              <div class="kadrForm">
+                <label for="kodMeliUser"
+                  >کد ملی<span style="color: #ba9664">*</span></label
+                >
+                <input
+                  type="number"
+                  id="kodMeliUser"
+                  name="kodMeliUser"
+                  placeholder="کد ملی"
+                />
+              </div>
+
+              <!-- ایمیل گیرنده -->
+
+              <div class="kadrForm">
+                <label for="emailUser"
+                  >ایمیل<span style="color: #ba9664">*</span></label
+                >
+                <input
+                  type="email"
+                  id="emailUser"
+                  name="emailUser"
+                  placeholder="ایمیل"
+                />
+              </div>
+
+              <!-- تلفن ثابت گیرنده -->
+
+              <div class="kadrForm">
+                <label for="shomSabetUser"
+                  >تلفن ثابت<span style="color: #ba9664">*</span></label
+                >
+                <input
+                  type="text"
+                  id="shomSabetUser"
+                  name="shomSabetUser"
+                  placeholder="تلفن ثابت"
+                />
+              </div>
+
+              <!-- توضیحات -->
+
+              <div class="kadrForm">
+                <label for="tozihatUser">
+                  توضیحات<span style="color: #ba9664">(اختیاری)</span></label
+                >
+                <textarea
+                  name="tozihatUser"
+                  id="tozihatUser"
+                  placeholder="توضیحات خود را اینجا بنوسید ..."
+                ></textarea>
+              </div>
+            </form>
+
+            <!-- کادر افزودن آدرس -->
+            <div class="kadrNamayeshAdres">
+              <h3
+                style="
+                  margin: 0;
+                  padding-bottom: 10px;
+                  border-bottom: 1px solid #ba9664;
+                  color: #9c8686;
+                "
+              >
+                آدرس تحویل سفارش
+              </h3>
+
+              <div
+                class="addAdres"
+                title="افزودن آدرس"
+                onclick="openFormAdres()"
+              >
+                <div style="text-align: center">
+                  <i
+                    class="fa-solid fa-plus fa"
+                    style="
+                      color: #ba9664;
+                      padding: 20px;
+                      font-size: 30px;
+                      border: 1px dashed #eed8aa;
+                      border-radius: 50%;
+                    "
+                  ></i>
+
+                  <h4 style="color: #9c8686">افزودن آدرس جدید</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- صورتحساب -->
+
+          <div class="sooratHesab">
+            <div style="display: flex; justify-content: space-between">
+              <h5>قیمت کالا ها :</h5>
+              <h5 class="geymatItem">
+                <span> ۹۹۹,۹۹۹,۹۹۹ </span>
+                <span style="color: #ba9664">تومان</span>
+              </h5>
+            </div>
+
+            <div style="display: flex; justify-content: space-between">
+              <h5>مجموع تخفیف ها :</h5>
+              <h5 class="meghdarTakhfif">
+                <span> ۹۹۹,۹۹۹,۹۹۹ </span>
+                <span style="color: #ba9664">تومان</span>
+              </h5>
+            </div>
+
+            <div style="display: flex; justify-content: space-between">
+              <h5>جمع سبد خرید :</h5>
+              <h5 class="jamKol">
+                <span> ۹۹۹,۹۹۹,۹۹۹ </span>
+                <span style="color: #ba9664">تومان</span>
+              </h5>
+            </div>
+
+            <div>
+              <a href="cart.html"> سبد خرید</a>
+              <a href="checkout.html">تایید و ادامه</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- فوتر -->
+
+    <footer>
+      <div class="container">
+        <div class="footerLogo">
+          <img src="media/logo/GLEN LOGO FINAL ۲.png" alt="" />
+          <h3>متنوع ، به صرفه و با كيفيت</h3>
+        </div>
+        <div class="footerTop">
+          <div class="right">
+            <h3 class="address">آدرس : مشهد ، چهار طبقه ، پاساژ لیدوما</h3>
+
+            <div class="address">
+              <h3>گالری : طبقه منفي ۲ واحد ۴۸</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>جلسات : طبقه مثبت ۱ واحد ۱۶</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+
+            <div class="address">
+              <h3>کارگاه : طبقه منفي ۲ واحد ۴۷</h3>
+              <h3>۰۵۱ - ۳۲۲۸۵۸۵۴ <i class="fa-solid fa-phone fa"></i></h3>
+            </div>
+          </div>
+
+          <div class="center">
+            <div class="menu">
+              <h3>دسترسی سریع</h3>
+
+              <a href="#" class="item">گوشواره طلا زنانه</a>
+              <a href="#" class="item">حلقه طلا</a>
+              <a href="#" class="item">کالا های تخفیف دار</a>
+              <a href="#" class="item">سرویس و نیم ست طلا</a>
+            </div>
+
+            <div class="menu">
+              <h3>خدمات</h3>
+
+              <a href="#" class="item">راهنمای خرید</a>
+              <a href="faq.html" class="item">سوالات متداول</a>
+              <a href="#" class="item">شرایط و قوانین</a>
+              <a href="contactUs.html" class="item">تماس با ما</a>
+            </div>
+          </div>
+
+          <div class="left">
+            <h3>ارتباط از طریق شبکه های اجتماعی</h3>
+
+            <div class="footerIcons">
+              <a href="#"><img src="media/icons/telegram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/instagram.png" alt="" /></a>
+              <a href="#"><img src="media/icons/whats app.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>
+            تمام حقوق برای گلن محفوظ بوده و استفاده از محتوای گلن تنها با ذکر
+            نام و درج لینک مستقیم مجاز است.
+          </p>
+
+          <a href="#">
+            <img src="media/icons/eNamad.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- ir-city-select.js -->
+    <script src="https://github.com/KayvanMazaheri/ir-city-select/releases/download/v0.2.0/ir-city-select.min.js"></script>
+
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/51e7612045.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  js link  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

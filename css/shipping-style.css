@@ -1,0 +1,228 @@
+section .container {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.kadrEtelaatUser {
+  width: 50%;
+}
+
+/* فرم اطلاعات گیرنده */
+.etelaatUser {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.etelaatUser .kadrForm {
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.etelaatUser .kadrForm:last-child {
+  width: 100%;
+}
+
+.etelaatUser #tozihatUser {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.etelaatUser #nameUser,
+.etelaatUser #familUser,
+.etelaatUser #phoneNumberUser,
+.etelaatUser #kodMeliUser,
+.etelaatUser #emailUser,
+.etelaatUser #shomSabetUser,
+.etelaatUser #tozihatUser {
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #feebdd;
+  color: #9c8686;
+  border: none;
+  padding: 10px;
+  font-family: iransans-web;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.etelaatUser #nameUser:focus,
+.etelaatUser #familUser:focus,
+.etelaatUser #phoneNumberUser:focus,
+.etelaatUser #kodMeliUser:focus,
+.etelaatUser #emailUser:focus,
+.etelaatUser #shomSabetUser:focus,
+.etelaatUser #tozihatUser:focus {
+  outline: none;
+  background-color: #ffdfc8;
+  color: #000;
+}
+
+/* کادر افزودن آدرس */
+
+.kadrNamayeshAdres {
+  width: calc(100% - 40px);
+  height: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.addAdres {
+  width: 30%;
+  height: 250px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #eed8aa;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addAdres:hover {
+  background-color: #fef8f3;
+}
+
+/* فرم اطلاعات آدرس */
+
+.backKadrFormAdres {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -999;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.kadrFormAdres {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: 30%;
+  height: max-content;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  z-index: -9999;
+  opacity: 0;
+}
+
+#formAdres {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+#formAdres label {
+  display: inline-block;
+  color: #9c8686;
+  padding-bottom: 10px;
+}
+
+.ir-select {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ostan,
+#shahr,
+#matnAdres,
+#pelak,
+#vahed,
+#kodPosti {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #9c8686;
+  border: none;
+  background-color: #feebdd;
+  border-radius: 5px;
+  outline: none;
+}
+
+#matnAdres {
+  padding: 10px 5px;
+}
+
+#ostan:focus,
+#shahr:focus,
+#matnAdres:focus,
+#pelak:focus,
+#vahed:focus,
+#kodPosti:focus {
+  outline: none;
+  background-color: #ffdfc8;
+  color: #000;
+}
+
+#saveAdres {
+  padding: 8px 20px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* صورتحساب */
+
+.geymatItem span:first-child,
+.meghdarTakhfif span:first-child,
+.jamKol span:first-child {
+  color: #9c8686;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.sooratHesab {
+  min-width: 25%;
+  max-width: 40%;
+  height: max-content;
+  padding: 15px;
+  font-size: 20px;
+  color: #9c8686;
+  border: 1px solid #ba9664;
+  border-radius: 10px;
+}
+
+.sooratHesab div:last-child {
+  text-align: center;
+}
+
+.sooratHesab a {
+  padding: 10px 50px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border-radius: 10px;
+}
+
+.sooratHesab a:first-child {
+  background-color: #feebdd;
+  color: #403b3b;
+}
+
+.sooratHesab a:first-child:hover {
+  background-color: #fce1ca;
+}
+
+.sooratHesab a:last-child:hover {
+  background-color: #2d2c2c;
+}
