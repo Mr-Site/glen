@@ -44,7 +44,9 @@
 }
 
 .tabcontent {
+
   display: none;
+  margin: 20px;
   height: 100%;
 }
 
