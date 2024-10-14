@@ -1,0 +1,150 @@
+section .container {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.kadrRihgt {
+  width: 45%;
+}
+
+/* انتخاب درگاه پرداخت */
+
+.kadrDargahPardahkt {
+  width: calc(100% - 40px);
+  height: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dargahPardakht {
+  display: flex;
+  width: 100%;
+}
+
+.dargahPardakht .item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  filter: grayscale(100%);
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.dargahPardakht .item img {
+  width: 100%;
+}
+
+.dargahPardakht .item:focus {
+  border: 1px solid #eed8aa;
+  filter: grayscale(0);
+}
+
+/* کد تخفیف */
+
+.kadrKodTakhfif,
+.kadrItemHa {
+  width: calc(100% - 40px);
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#kodTakhfif {
+  width: calc(50% - 20px);
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #feebdd;
+  color: #9c8686;
+  border: none;
+  padding: 10px;
+  font-family: iransans-web;
+}
+
+#kodTakhfif:focus {
+  outline: none;
+  background-color: #ffdfc8;
+  color: #000;
+}
+
+.kadrKodTakhfif a {
+  padding: 8px 30px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border-radius: 10px;
+}
+
+/* آیتم های سفارش */
+
+.kadrItemHa {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kadrItemHa .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(20% - 42px);
+  height: 80px;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ba9664;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kadrItemHa .item img {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* صورتحساب */
+
+.geymatItem span:first-child,
+.meghdarTakhfif span:first-child,
+.jamKol span:first-child {
+  color: #9c8686;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.sooratHesab {
+  min-width: 25%;
+  max-width: 40%;
+  height: max-content;
+  padding: 15px;
+  font-size: 20px;
+  color: #9c8686;
+  border: 1px solid #ba9664;
+  border-radius: 10px;
+}
+
+.sooratHesab div:last-child {
+  text-align: center;
+}
+
+.sooratHesab a {
+  padding: 10px 50px;
+  background-color: #403b3b;
+  color: #feebdd;
+  border-radius: 10px;
+}
+
+.sooratHesab a:first-child {
+  background-color: #feebdd;
+  color: #403b3b;
+}
+
+.sooratHesab a:first-child:hover {
+  background-color: #fce1ca;
+}
+
+.sooratHesab a:last-child:hover {
+  background-color: #2d2c2c;
+}

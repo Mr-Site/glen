@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- shipping css link -->
-    <link rel="stylesheet" href="css/shipping-style.css" />
+    <link rel="stylesheet" href="css/checkOut-style.css" />
   </head>
   <body onload="startTime()">
     <!-- بنر -->
@@ -116,89 +116,9 @@
       </div>
     </div>
 
-    <!-- فرم اطلاعات آدرس-->
-    <div class="backKadrFormAdres" onclick="closeFormAdres()"></div>
-    <div class="kadrFormAdres">
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-bottom: 20px;
-          color: #9c8686;
-          border-bottom: 1px solid #ba9664;
-        "
-      >
-        <h4 style="margin: 0">افزودن آدرس جدید</h4>
-        <i
-          class="fa-solid fa-xmark fa"
-          style="cursor: pointer"
-          onclick="closeFormAdres()"
-        ></i>
-      </div>
-
-      <form action="#" id="formAdres">
-        <!-- انتخاب استان و شهر-->
-        <div class="ir-select">
-          <div>
-            <label for="ostan">استان</label>
-            <select class="ir-province" id="ostan"></select>
-          </div>
-          <div>
-            <label for="shahr">شهر</label>
-            <select class="ir-city" id="shahr"></select>
-          </div>
-        </div>
-
-        <!-- آدرس -->
-        <div style="width: 100%">
-          <label for="matnAdres">آدرس</label>
-          <input type="text" name="adres" id="matnAdres" placeholder="آدرس" />
-        </div>
-
-        <div style="width: 100%; display: flex; justify-content: space-between">
-          <div style="width: 30%">
-            <!-- پلاک -->
-            <label for="pelak">پلاک</label>
-            <input
-              type="number"
-              name="pelak"
-              id="pelak"
-              placeholder="پلاک"
-              minlength="1"
-              maxlength="4"
-            />
-          </div>
-
-          <div style="width: 30%">
-            <!-- واحد -->
-
-            <label for="vahed">واحد</label>
-            <input type="number" name="vahed" id="vahed" placeholder="واحد" />
-          </div>
-
-          <div style="width: 30%">
-            <!-- کد پستی -->
-
-            <label for="kodPosti">کد پستی</label>
-            <input
-              type="number"
-              name="kodPosti"
-              id="kodPosti"
-              placeholder="کد پستی"
-            />
-          </div>
-        </div>
-
-        <div style="margin-top: 20px; text-align: left; width: 100%">
-          <input type="submit" value="ذخیره آدرس" id="saveAdres" />
-        </div>
-      </form>
-    </div>
-
     <div class="pageMap">
       <div class="container">
-        <h2>تکمیل اطلاعات</h2>
+        <h2>تایید و پرداخت</h2>
 
         <!-- مپ -->
 
@@ -216,7 +136,13 @@
           <span>/</span>
 
           <a href="shipping.html">
-            <h1>تکمیل اطلاعات</h1>
+            <span>تکمیل اطلاعات</span>
+          </a>
+
+          <span>/</span>
+
+          <a href="checkout.html">
+            <h1>تایید و پرداخت</h1>
           </a>
         </nav>
       </div>
@@ -227,141 +153,128 @@
     <main>
       <section>
         <div class="container">
-          <!-- فرم اطلاعات گیرنده -->
+          <div class="kadrRihgt">
+            <!-- انتخاب درگاه پرداخت -->
 
-          <div class="kadrEtelaatUser">
-            <form action="#" class="etelaatUser">
-              <!-- نام گیرنده -->
-              <div class="kadrForm">
-                <label for="nameUser"
-                  >نام گیرنده <span style="color: #ba9664">*</span></label
-                >
-                <input
-                  type="text"
-                  id="nameUser"
-                  name="nameUser"
-                  placeholder="نام گیرنده"
-                />
-              </div>
-
-              <!--  نام خانوادگی گیرنده -->
-
-              <div class="kadrForm">
-                <label for="familUser">
-                  نام خانوادگی گیرنده
-                  <span style="color: #ba9664">*</span></label
-                >
-                <input
-                  type="text"
-                  id="familUser"
-                  name="familUser"
-                  placeholder="نام خانوادگی گیرنده"
-                />
-              </div>
-
-              <!-- شماره همراه گیرنده -->
-
-              <div class="kadrForm">
-                <label for="phoneNumberUser"
-                  >شماره همراه <span style="color: #ba9664">*</span></label
-                >
-                <input
-                  type="number"
-                  id="phoneNumberUser"
-                  name="phoneNumberUser"
-                  placeholder="شماره همراه "
-                />
-              </div>
-
-              <!-- کد ملی گیرنده -->
-
-              <div class="kadrForm">
-                <label for="kodMeliUser"
-                  >کد ملی<span style="color: #ba9664">*</span></label
-                >
-                <input
-                  type="number"
-                  id="kodMeliUser"
-                  name="kodMeliUser"
-                  placeholder="کد ملی"
-                />
-              </div>
-
-              <!-- ایمیل گیرنده -->
-
-              <div class="kadrForm">
-                <label for="emailUser"
-                  >ایمیل<span style="color: #ba9664">*</span></label
-                >
-                <input
-                  type="email"
-                  id="emailUser"
-                  name="emailUser"
-                  placeholder="ایمیل"
-                />
-              </div>
-
-              <!-- تلفن ثابت گیرنده -->
-
-              <div class="kadrForm">
-                <label for="shomSabetUser"
-                  >تلفن ثابت<span style="color: #ba9664">*</span></label
-                >
-                <input
-                  type="text"
-                  id="shomSabetUser"
-                  name="shomSabetUser"
-                  placeholder="تلفن ثابت"
-                />
-              </div>
-
-              <!-- توضیحات -->
-
-              <div class="kadrForm">
-                <label for="tozihatUser">
-                  توضیحات<span style="color: #ba9664">(اختیاری)</span></label
-                >
-                <textarea
-                  name="tozihatUser"
-                  id="tozihatUser"
-                  placeholder="توضیحات خود را اینجا بنوسید ..."
-                ></textarea>
-              </div>
-            </form>
-
-            <!-- کادر افزودن آدرس -->
-            <div class="kadrNamayeshAdres">
-              <h3
-                style="
-                  margin: 0;
-                  padding-bottom: 10px;
-                  border-bottom: 1px solid #ba9664;
-                  color: #9c8686;
-                "
+            <div class="kadrDargahPardahkt">
+              <div
+                style="border-bottom: 1px solid #ba9664; margin-bottom: 20px"
               >
-                آدرس تحویل سفارش
-              </h3>
+                <h4 style="margin: 0 0 10px 0; color: #9c8686">
+                  انتخاب درگاه پرداخت
+                </h4>
+              </div>
 
               <div
-                class="addAdres"
-                title="افزودن آدرس"
-                onclick="openFormAdres()"
+                style="
+                  width: max-content;
+                  margin-bottom: 20px;
+                  padding: 5px 10px;
+                  color: #ba9664;
+                  font-size: 13px;
+                  border-radius: 10px;
+                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                "
               >
-                <div style="text-align: center">
+                <span style="margin-left: 5px">
                   <i
-                    class="fa-solid fa-plus fa"
-                    style="
-                      color: #ba9664;
-                      padding: 20px;
-                      font-size: 30px;
-                      border: 1px dashed #eed8aa;
-                      border-radius: 50%;
-                    "
+                    class="fa-regular fa-credit-card fa"
+                    style="vertical-align: middle"
                   ></i>
+                </span>
+                <span>پرداخت آنلاین از طریق کلیه کارت های شتابی</span>
+              </div>
 
-                  <h4 style="color: #9c8686">افزودن آدرس جدید</h4>
+              <div
+                style="
+                  width: max-content;
+                  margin-bottom: 20px;
+                  padding: 5px 10px;
+                  color: #9c8686;
+                  background-color: #fef7f1;
+                  font-size: 15px;
+                  border-radius: 10px;
+                "
+              >
+                <span style="margin-left: 5px">
+                  <i class="fa-solid fa-triangle-exclamation fa"></i>
+                </span>
+                <span>
+                  لطفا قبل از ورود به صفحه پرداخت از خاموش بودن VPN خود اطمینان
+                  حاصل کنید.</span
+                >
+              </div>
+
+              <!-- درگاه های پرداخت -->
+
+              <div class="dargahPardakht">
+                <div style="width: 8%; margin: 0 20px">
+                  <a href="#" class="item">
+                    <img src="media/Logo/image 32.png" alt="" />
+                  </a>
+                </div>
+
+                <div style="width: 8%; margin: 0 20px">
+                  <a href="#" class="item">
+                    <img src="media/Logo/image 33.png" alt="" />
+                  </a>
+                </div>
+
+                <div style="width: 8%; margin: 0 20px">
+                  <a href="#" class="item">
+                    <img src="media/Logo/image 34.png" alt="" />
+                  </a>
                 </div>
               </div>
+            </div>
+
+            <!-- کد تخفیف -->
+            <div class="kadrKodTakhfif">
+              <div
+                style="border-bottom: 1px solid #ba9664; margin-bottom: 20px"
+              >
+                <h4 style="margin: 0 0 10px 0; color: #9c8686">کد تخفیف</h4>
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="kodTakhfif"
+                  id="kodTakhfif"
+                  placeholder="اینجا وارد کنید"
+                />
+                <a href="#" style="">ثبت</a>
+              </div>
+            </div>
+
+            <div class="kadrItemHa">
+              <div
+                style="
+                  width: 100%;
+                  border-bottom: 1px solid #ba9664;
+                  margin-bottom: 20px;
+                "
+              >
+                <h4 style="margin: 0 0 10px 0; color: #9c8686">
+                  آیتم های سفارش شما
+                </h4>
+              </div>
+
+              <a href="#" class="item">
+                <img src="media/images/image 2.png" alt="" />
+              </a>
+
+              <a href="#" class="item">
+                <img src="media/images/image 2.png" alt="" />
+              </a>
+
+              <a href="#" class="item">
+                <img src="media/images/image 2.png" alt="" />
+              </a>
+
+              <a href="#" class="item">
+                <img src="media/images/image 2.png" alt="" />
+              </a>
             </div>
           </div>
 
@@ -373,6 +286,13 @@
               <h5 class="geymatItem">
                 <span> ۹۹۹,۹۹۹,۹۹۹ </span>
                 <span style="color: #ba9664">تومان</span>
+              </h5>
+            </div>
+
+            <div style="display: flex; justify-content: space-between">
+              <h5>هزینه ارسال :</h5>
+              <h5>
+                <span> به عهده مشتری </span>
               </h5>
             </div>
 
@@ -393,8 +313,8 @@
             </div>
 
             <div>
-              <a href="cart.html"> سبد خرید</a>
-              <a href="checkout.html">تایید و ادامه</a>
+              <a href="shipping.html">تکمیل اطلاعات</a>
+              <a href="#">تایید و پرداخت</a>
             </div>
           </div>
         </div>
